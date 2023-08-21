@@ -44,6 +44,7 @@ const config: GatsbyConfig = {
             url: `https://discord.gg/3U7H7CjgxP`,
           },
         ],
+        postsPrefix: `/blog/posts`,
       },
     },
     {
