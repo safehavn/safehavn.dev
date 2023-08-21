@@ -18,6 +18,7 @@ const config: GatsbyConfig = {
     author: `kyp`,
   },
   trailingSlash: `never`,
+  pathPrefix: '/safehavn.dev',
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
