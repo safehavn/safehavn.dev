@@ -66,7 +66,8 @@ const theme = merge(tailwind, {
     p: {
       fontSize: [1, '18px'],
       letterSpacing: `-0.003em`,
-      lineHeight: `body`,
+      lineHeight: `1.6`,
+      marginBottom: `1.6em`,
       "--baseline-multiplier": 0.179,
       "--x-height-multiplier": 0.35,
       wordBreak: `break-word`,
@@ -107,7 +108,8 @@ const theme = merge(tailwind, {
     h4: {
       variant: `text.heading`,
       fontSize: [1, 2, 2, 3],
-      mt: 3,
+      mt: 5,
+      mb: 4
     },
     h5: {
       variant: `text.heading`,
@@ -165,14 +167,14 @@ const theme = merge(tailwind, {
     },
     img: {
       borderRadius: `4px`,
-      boxShadow: `lg`,
+      boxShadow: `sm`,
       maxWidth: `100%`,
     },
   },
   layout: {
     container: {
       padding: [3, 4],
-      maxWidth: `1024px`,
+      maxWidth: `800px`,
     },
     content: {
       figure: {

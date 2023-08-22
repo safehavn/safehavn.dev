@@ -53,7 +53,7 @@ const Post: React.FC<React.PropsWithChildren<PageProps<MBPostProps>>> = ({ data:
       sx={{
         my: 5,
         ".gatsby-resp-image-wrapper": {
-          my: [4, 4, 5],
+          my: [3, 4],
           borderRadius: `4px`,
           boxShadow: shadow.join(`, `),
           ".gatsby-resp-image-image": {

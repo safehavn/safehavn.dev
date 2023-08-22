@@ -1,166 +1,95 @@
 ---
-title: Markdown Reference
-date: 2022-09-12
+title: 開発日記 2023-08-23
+date: 2023-08-23
 tags:
-  - Code
-  - Markdown
+  - 日本語
+  - devlog
 ---
 
-## What to expect from here on out
+皆様はじめまして。SAFE HAVN STUDIOの[kyp(@_newkyp)](https://twitter.com/_newkyp)です。[SAEKO: Giantess Dating Sim](https://saekogame.com/)というゲームを作っています。
 
-What follows from here is just a bunch of absolute nonsense I've written to dogfood the plugin itself. It includes every sensible typographic element I could think of, like **bold text**, unordered lists, ordered lists, code blocks, block quotes, _and even italics_.
+ゲームを発表してからの数ヶ月、作業した日には[Discord](https://discord.gg/3U7H7CjgxP)に進捗を共有するようにしてきました。宣伝のためと、何より自分がサボらないようにするためです。でも、ゲーム制作が進むにつれて、その日の作業内容が全てネタバレ、みたいな感じになってきました。
 
-It's important to cover all of these use cases for a few reasons:
+なので最近、何も具体的に進捗を書けていません。さっき自分でログを読み返したところ、同じような文章が並んでいました。「今日はシナリオを書きました。絵も描きました。おわり」みたいな。
 
-1. We want everything to look good out of the box.
-2. Really just the first reason, that's the whole point of the plugin.
-3. Here's a third pretend reason though a list with three items looks more realistic than a list with two items.
+そこで、今週からは毎日更新を諦め、頻度を1週間に1度に落とす代わりに、ブログという場で少し長めの進捗報告ができればと思っています。よろしくお願いします！
+<center>
+  <iframe src="https://store.steampowered.com/widget/2492120/" frameborder="0" width="646" height="190"></iframe>
+  <br />
+  <small>もし、本当に万が一もしあなたがウィッシュリスト登録をしていない場合、今すぐ登録をしてください。これは最後の警告です</small>
+</center>
 
-Footnotes[^1] should also work.
+#### シナリオを書きました。絵も描きました
 
-Now we're going to try out another header style.
+すいません、週次にしてもやっぱりこんな感じです。シナリオと絵を書きました。例によってネタバレに直結する内容のものが多く、内容を見せることは難しそうです。
 
-### Typography should be easy
+……代わりに！今週は、今書いているシナリオや絵の立ち位置について説明しようと思います。今作っているのは、私達が「体験版」「デモ」と呼んでいる短いバージョンのゲームです。ボリュームはだいたい1時間程度で、ゲームの発売前に無料で公開しようと考えています。
 
-So that's a header for you — with any luck if we've done our job correctly that will look pretty reasonable.
+デモのシナリオは、ゲーム本編とは別のものとして書き上げました。色々悩んでいるところではあるのですが、デモは現時点ではゲーム本編の前日譚として、ストーリーに緩やかなつながりを出したいと思っています。
 
-Something a wise person once told me about typography is:
+実は、シナリオ自体は既に一度書きあげているのですが、プログラムの動作確認をするたびに文が目に入ってくるので、細かい表現とかストーリーの流れとかが気になって、気づいたらめちゃくちゃ書き直しています。最終的には、元の文章がほぼ残らなくなるような気もしています。
 
-> Typography is pretty important if you don't want your stuff to look like trash. Make it good then it won't be bad.
+なので、「デモのシナリオ100%完成した！」となるまでにはまだ少し時間が必要そうです。まあでも、90%くらいのところにはいるはず！たぶん！おそらく！
 
-It's probably important that images look okay here by default as well:
+#### サウンド
 
-![](https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80)
+今週のメイントピックはサウンドです。先週まで、デモは全くの無音でした（音の鳴らし方すら知りませんでした）。あまりに無音で寂しいので、「脳波　喜ぶ　BGM」とかで検索して出てきたサイケデリックなサムネイルのYouTube動画を流したりしていました。
 
-Now I'm going to show you an example of an unordered list to make sure that looks good, too:
+<center>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/a9n_4d64dUw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <br />
+  <small>このBGMまじで昔からある</small>
+</center>
 
-- So here is the first item in this list.
-- In this example we're keeping the items short.
-- Later, we'll use longer, more complex list items.
+ですが、今週ついに最初のBGMとSEを作り、ゲーム内に組み込むところまで至りました！音がつくと、なんかゲームって感じがすごくします。ふんわりした表現で申し訳ないです。
 
-And that's the end of this section.
+BGMの曲調について。元々頭の中では、引き出しの中のシーン（画面が黒いシーン）ではBreakcoreを使いたいと考えていました。SAEKOのビジュアル（特に引き出しの中のシーン）はだいぶBreakcoreの影響を受けてるし、焦燥感とか激しめの表現がSAEKOのテーマに合っていると思ったからです。
 
-## What if we stack headings?
+でも、なんとなく想像はできていたのですが...BreakcoreはノベルゲームのBGMとして、激しすぎました！キャラクターが大笑いしたり真剣に悩んだりしている裏で、倍速で切り刻まれたアーメンブレイクが鳴り続けています。正直、文字とか読んでる場合じゃないです。今すぐ踊り出すべき。
 
-### We should make sure that looks good, too.
+悩みながら、[HOPE LEFT ME](https://store.steampowered.com/app/2268470/HOPE_LEFT_ME/)というゲームもプレイしました。Breakcore系のアーティストであるAstrophysicsさんが作ったノベルで、自身の作曲された同名のアルバムをBGMとして使用しています。なんと「VNカット（ゲーム用アレンジ版）」「LPカット（アルバム版。原曲）」の2種類からBGMを選ぶことができるのですが、VNカットを選ぶと、原曲ほどの激しいドラムパートはあまり出てこなくなります。色々と苦労があったのかもしれない、と思わされました。
 
-Sometimes you have headings directly underneath each other. In those cases you often have to undo the top margin on the second heading because it usually looks better for the headings to be closer together than a paragraph followed by a heading should be.
+<center>
+  <iframe src="https://store.steampowered.com/widget/2268470/" frameborder="0" width="646" height="190"></iframe>
+  <br />
+  <small>Это хорошая игра</small>
+</center>
 
-### When a heading comes after a paragraph …
+自分も悩んでいたのですが、結局曲調を少し変えてみることにしました。いま一番しっくり来ているのは、Chill BreakcoreとDeep Dubstepを融合させたような曲調です（説明が難しい……）。しっくり来るし、個人的にも好みで作るのが楽しいし、この曲調で何個かパターンを作りたいです。
 
-When a heading comes after a paragraph, we need a bit more space, like I already mentioned above. Now let's see what a more complex list would look like.
+まあでも、冴子との会話シーンや、ここでは明かせない秘密のシーンのためにも、別の曲調にもチャレンジする必要がありますね。やることたくさん……
 
-- **I often do this thing where list items have headings.**
 
-  For some reason I think this looks cool which is unfortunate because it's pretty annoying to get the styles right.
 
-  I often have two or three paragraphs in these list items, too, so the hard part is getting the spacing between the paragraphs, list item heading, and separate list items to all make sense. Pretty tough honestly, you could make a strong argument that you just shouldn't write this way.
+#### ロゴ制作
 
-- **Since this is a list, I need at least two items.**
+それから、最後に輝かしい進捗がもう1つ！先月からメンバーの[@maztani](https://twitter.com/k_maztani)に全面協力していただき、ゲームの正式なロゴを作り始めました。方向性にケチをつけたりして（「良いんだけど、別のパターンも見てみたいですね」）、結果的に十数個もパターンを作ってもらいました。いいものがたくさんあったのですが、最終的に採用できるものは1つだけなので、恐る恐る何個か切り捨てました。申し訳ないです。自分が同じことされたら泣くと思います。
 
-  I explained what I'm doing already in the previous list item, but a list wouldn't be a list if it only had one item, and we really want this to look realistic. That's why I've added this second list item so I actually have something to look at when writing the styles.
+![2](./2.jpeg)
+<center>
+  <small>作ってもらったロゴ案の数々。きちんと供養しなければ、化けて出てくるかもしれない</small>
+</center>
 
-- **It's not a bad idea to add a third item either.**
+実際に採用されたロゴはここでは公開せず、今後新しいバナーだったりカバーだったりが揃った段階でまとめてお見せしたいと思っています。SAEKOのスピリットを伝える、ユニークでクールなロゴが仕上がったと思います。ゆるりとご期待いただけると嬉しいです。
 
-  I think it probably would've been fine to just use two items but three is definitely not worse, and since I seem to be having no trouble making up arbitrary things to type, I might as well include it.
+#### 最後に
 
-After this sort of list I usually have a closing statement or paragraph, because it kinda looks weird jumping right to a heading.
+というわけで、今週の進捗はこんな感じでした。毎日書こうとすると、「1日あったのにこれしか出来なかったのか……」みたいなに思ってけっこう苦しいのですが、1週間単位で書き出すとわりとたくさん書けますね。ポジティブな気持ちになれていいので、今後もこのスタイルで書いていきたいです。
 
-## Code should look okay by default.
+関係のない日記：先週から、[ダンガンロンパV3](https://store.steampowered.com/app/567640/V3/?l=japanese)をプレイしています。16人の生徒同士で殺し合いをします。過去作をプレイして分かっていたことなのですが、好きなキャラクターがどんどん死んでいきます。
 
-I think most people are going to use [highlight.js](https://highlightjs.org/) or [Prism](https://prismjs.com/) or something if they want to style their code blocks but it wouldn't hurt to make them look _okay_ out of the box, even with no syntax highlighting.
+苦しいです。ここを出たら、一緒にデートをしようって約束したのに……
 
-Here's what a default `tailwind.config.js` file looks like at the time of writing:
+……
 
-```js
-module.exports = {
-  purge: [],
-  theme: {
-    extend: {},
-  },
-  variants: {},
-  plugins: [],
-};
-```
+でも、夜中の冷蔵室に忍び込んで、好きだった女の子の冷たい手を握ったりしたいですよね。顔を覆っていた暗い毛布を外すと、青い顔には生気がなくて、ああ、君は本当に死んでしまったんだ、あの瞳の輝きは僕の記憶の中にしかない、なのになんで、僕はまだ君を忘れられずにいるんだろう、記憶の中だけに生きている君より、他に優先すべきことがたくさんあるのに、どうして、どうして……
 
-Hopefully that looks good enough to you.
+*どうしたの？*
 
-### What about nested lists?
+耳の奥から声が聞こえた。そんなはずはない。その透明で美しい声色は、記憶の中で何度も反芻した、誰よりも大好きだったあの子の――
 
-Nested lists basically always look bad which is why editors like Medium don't even let you do it, but I guess since some of you goofballs are going to do it we have to carry the burden of at least making it work.
+*変なの。そんな、幽霊を見たみたいな顔しちゃってさ。*
 
-1. **Nested lists are rarely a good idea.**
-   - You might feel like you are being really "organized" or something but you are just creating a gross shape on the screen that is hard to read.
-   - Nested navigation in UIs is a bad idea too, keep things as flat as possible.
-   - Nesting tons of folders in your source code is also not helpful.
-2. **Since we need to have more items, here's another one.**
-   - I'm not sure if we'll bother styling more than two levels deep.
-   - Two is already too much, three is guaranteed to be a bad idea.
-   - If you nest four levels deep you belong in prison.
-3. **Two items isn't really a list, three is good though.**
-   - Again please don't nest lists if you want people to actually read your content.
-   - Nobody wants to look at this.
-   - I'm upset that we even have to bother styling this.
+……そうだね。でもね、君はほんとに幽霊なんだよ。残酷なコロシアイに巻き込まれて、それで――
 
-The most annoying thing about lists in Markdown is that `<li>` elements aren't given a child `<p>` tag unless there are multiple paragraphs in the list item. That means I have to worry about styling that annoying situation too.
-
-- **For example, here's another nested list.**
-
-  But this time with a second paragraph.
-
-  - These list items won't have `<p>` tags
-  - Because they are only one line each
-
-- **But in this second top-level list item, they will.**
-
-  This is especially annoying because of the spacing on this paragraph.
-
-  - As you can see here, because I've added a second line, this list item now has a `<p>` tag.
-
-    This is the second line I'm talking about by the way.
-
-  - Finally here's another list item so it's more like a list.
-
-- A closing list item, but with no nested list, because why not?
-
-And finally a sentence to close off this section.
-
-## There are other elements we need to style
-
-I almost forgot to mention links, like [this link to the Tailwind CSS website](https://tailwindcss.com). We almost made them blue but that's so yesterday, so we went with dark gray, feels edgier.
-
-We even included table styles, check it out:
-
-| Wrestler                | Origin       | Finisher           |
-| ----------------------- | ------------ | ------------------ |
-| Bret "The Hitman" Hart  | Calgary, AB  | Sharpshooter       |
-| Stone Cold Steve Austin | Austin, TX   | Stone Cold Stunner |
-| Randy Savage            | Sarasota, FL | Elbow Drop         |
-| Vader                   | Boulder, CO  | Vader Bomb         |
-| Razor Ramon             | Chuluota, FL | Razor's Edge       |
-
-We also need to make sure inline code looks good, like if I wanted to talk about `<span>` elements or tell you the good news about `@tailwindcss/typography`.
-
-### Sometimes I even use `code` in headings
-
-Even though it's probably a bad idea, and historically I've had a hard time making it look good. This _"wrap the code blocks in backticks"_ trick works pretty well though really.
-
-Another thing I've done in the past is put a `code` tag inside of a link, like if I wanted to tell you about the [`tailwindcss/docs`](https://github.com/tailwindcss/docs) repository. I don't love that there is an underline below the backticks but it is absolutely not worth the madness it would require to avoid it.
-
-#### We haven't used an `h4` yet
-
-But now we have. Please don't use `h5` or `h6` in your content, Medium only supports two heading levels for a reason, you animals. I honestly considered using a `before` pseudo-element to scream at you if you use an `h5` or `h6`.
-
-We don't style them at all out of the box because `h4` elements are already so small that they are the same size as the body copy. What are we supposed to do with an `h5`, make it _smaller_ than the body copy? No thanks.
-
-### We still need to think about stacked headings though.
-
-#### Let's make sure we don't screw that up with `h4` elements, either.
-
-Phew, with any luck we have styled the headings above this text and they look pretty good.
-
-Let's add a closing paragraph here so things end with a decently sized block of text. I can't explain why I want things to end that way but I have to assume it's because I think things will look weird or unbalanced if there is a heading too close to the end of the document.
-
-What I've written here is probably long enough, but adding this final sentence can't hurt.
-
-[^1]: This is a footnote.
+*本来の原稿にはこの短編小説の続きが書かれていたのですが、微妙だし途中で投げ出していたのでこの辺で切り上げます。今週の開発ログはここまでです。また来週お会いしましょう！*
