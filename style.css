@@ -129,6 +129,21 @@ h1 {
   }
 }
 
+.notice {
+  border: 1px solid #000;
+  padding: 1em;
+  margin-bottom: 2em;
+  line-height: 1.5em;
+}
+
+.notice > h4 {
+  font-weight: bold;
+  letter-spacing: 0.5em;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 1em 0;
+}
+
 article > p {
   line-height: 1.5;
   margin-bottom: 2em;
