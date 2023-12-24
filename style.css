@@ -118,15 +118,8 @@ h1 {
   }
 }
 
-.nav-list-right {
-  align-self: flex-end;
-  list-style: none;
-
-  display: flex;
-
-  .nav-list-item {
-    padding-left: 1rem;
-  }
+.flex-grow-1 {
+  flex-grow: 1;
 }
 
 .notice {
@@ -176,4 +169,12 @@ article > figure > figcaption {
   font-size: small;
   text-align: center;
   line-height: normal;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
 }
