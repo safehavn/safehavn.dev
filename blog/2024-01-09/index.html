@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>開発日記 2023-12-22 -- SAFE HAVN STUDIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <meta property="og:title" content="開発日記 2023-12-22" />
+    <meta
+      property="og:description"
+      content="半月ぶりの開発日記です！ここ数日はいろいろイベントがあって、自分の中の社交性を総動員しました。"
+    />
+    <meta property="og:image" content="https://safehavn.dev/ogp.png" />
+    <meta name="twitter:card" content="summary" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <ul class="nav-list-left">
+          <li class="nav-list-item">
+            <a href="/" class="brand-link">SAFE HAVN STUDIO</a>
+          </li>
+        </ul>
+        <!-- <ul class="nav-list-right">
+          <li class="nav-list-item">
+            <a href="../index.html">EN</a>
+          </li>
+          <li class="nav-list-item selected">JA</li>
+        </ul> -->
+      </header>
+      <div class="main">
+        <article>
+          <p>2024年の最初の日記です。まずは、あけましておめでとうございます！</p>
+          <p>新年祝いということで、kohさんに冴子のイラストを書いてもらいました。お正月らしい冴子の絵というだけでなく、このゲームならではの遊び心もたくさん散りばめられています！</p>
+          <figure>
+            <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">Happy New Year!<br>It will be our biggest and busiest year as <a href="https://twitter.com/hashtag/saekogame?src=hash&amp;ref_src=twsrc%5Etfw">#saekogame</a> will be out at some point. Let&#39;s have a safe and HUGE year together!<br><br>あけましておめでとうございます！<br>2024年は <a href="https://twitter.com/hashtag/saekogame?src=hash&amp;ref_src=twsrc%5Etfw">#saekogame</a> のリリースに向け、精一杯努力して参ります。今年もよろしくお願いいたします！ <a href="https://t.co/zKlGz6ndij">pic.twitter.com/zKlGz6ndij</a></p>&mdash; SAEKO: Giantess Dating Sim (@saekogame) <a href="https://twitter.com/saekogame/status/1742011140354564556?ref_src=twsrc%5Etfw">January 2, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+          </figure>
+          <p>イラストを描いてもらうとき、以前は「巨大娘の表現としてこういうのが『良い』んだけど......」と細かく伝えていたのですが、最近は「この表現のほうが『良く』ないですか？」みたいに他のメンバーから案が上がってくることが増えてきました。そして実際に『良い』ことが多いです。メンバー全員に、性癖が広がり始めています。</p>
+          <p>なお、新年とはいえ日本では年初から大変な出来事が多く、おめでたい雰囲気は感じられなかったかもしれません。私も体調を崩している日が多くて、お正月は主に寝そべって本を読んだりしていました。箱男、ただ男が箱に入ってるってだけの話じゃないのね......。</p>
+          <h4 id="-">進捗（ここに書けること）</h4>
+          <p>1月末にかけてα版を作っているということは度々書いてきましたが、ついに一通りのプレイが完成しました。ビルドを作成し、開発メンバー全員で遊んでいます。全体のシステムやシナリオにはけっこう満足していて、あとは不満点を解消したり、足りない絵を描いたりしていく作業が中心になりそうです。</p>
+          <p>「不満点を解消したり、足りない絵を描いたりしていく作業」について。今できているものは、これがめちゃくちゃ多いです。直したいところだらけ！<br>
+          多すぎて、自分でも何したらいいか分からなくなるし、やりたいことが言葉にできなくて他人にも頼みづらいです。良くないな〜と思って、問題点を書き出すことにしました。まずイシューからはじめよ。</p>
+          <figure>
+            <img src="ss.png">
+            <figcaption>なお、ソースコードのレポジトリ名はsaegoです。Goで書いてるからです</figcaption>
+          </figure>
+          <p>手元にできているビルドをプレイしながら、頭の中の「理想のビルド」と比較します。理想と比較しているので、ダメなところだらけです。「これほしいなあ」みたいなところがあったら、とりあえずToDoとして書き出しておきます。自分の場合は、20分程度のビルドで25個のToDoがありました。</p>
+          <p>あとはそのToDoをいくつかのステージに分類します。いわゆるカンバン形式です。仕事だとめちゃくちゃに優先度付けされたカンバンに出会うことがありますが、自分たちの場合はミニマルに、「ToDo(α版までにやる)」「開発中」「完了」「ToDo(その他)」の4つだけに分けることにしました。</p>
+          <p>感想。やることが明確になっただけでなく、現在の状況について随分楽観的になれたような気がします。目の前のビルドが「理想とはいろいろ違う微妙なゲーム」から、「理想とは25箇所が違う微妙なゲーム」に変化して、逆に25箇所直せばいいということが分かったからかもしれません。それさえ直せば理想のゲームができる！</p>
+          <p>なお、Todoの書き出しにはGitHubのProject機能を使いましたが、これはエンジニアなので既に使っていたというだけの理由です。非エンジニアであればTrelloなど、似たようなことができるタスク管理アプリが他にもあると思います。</p>
+          <p>あと、カンバンを導入していい感じになったのは、今ちょうど「ゲームのシステムがある程度固まってきて、理想もはっきりしてる」というフェーズだからだと思います。これより前だと、やることが多すぎて爆発するとか、理想がふわっとしてて蒸発するとかがありそうだな〜という雑感です。</p>
+          <h4 id="-">進捗（ここに書けないこと）</h4>
+          <p>冴子との会話シーンについて。TGSのビルドを遊んでいただいた方ならお分かりになっていただけると思うのですが、今までのビルドだと、絵やビジュアルとしてはカッコよくてもゲームとしては微妙、という点が多々ありました。</p>
+          <p>それをゲームとして面白く、かつ理不尽ではないものにするために、システムを修正したり、それに沿って新しい絵を追加したり、という作業をしています。作り直しが多く、「ちょっとした機能でしょ」と思って作ったもので、一気に遊びが改善したり、逆のことも多々あります。立ち絵とダイアログがあって、選択肢をクリックすると分岐して、といういわゆるノベルゲームのシステムからは離れた部分なので、先人たちの知恵が使えないということが背景にありそうです。</p>
+          <p>それでも試行錯誤をした結果、現在の成果はいい感じで......見せたいんだけど......ネタバレだらけで......見せられなさそうな気がするので......そんな感じです。</p>
+          <p>今年もよろしくお願いいたします。</p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div>(C) SAFE HAVN STUDIO - email:</div>
+      <address class="flex-grow-1">contact@safehavn.dev</address>
+      <div><a href="/" class="footer-right">TOP</a></div>
+    </footer>
+  </body>
+</html>
