@@ -1,0 +1,72 @@
+<html>
+  <head>
+    <title>開発日記 2024-01-23 -- SAFE HAVN STUDIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <meta property="og:title" content="開発日記 2024-01-23" />
+    <meta
+      property="og:description"
+      content="今週の1月25日から、台北で開催されるTaipei Game Show 2024にSAEKO: Giantess Dating Simが展示されます。これまで通り、パブリッシャーのHYPER REALさんのブースでの試遊となる予定です。"
+    />
+    <meta property="og:image" content="https://safehavn.dev/ogp.png" />
+    <meta name="twitter:card" content="summary" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <ul class="nav-list-left">
+          <li class="nav-list-item">
+            <a href="/" class="brand-link">SAFE HAVN STUDIO</a>
+          </li>
+        </ul>
+        <!-- <ul class="nav-list-right">
+          <li class="nav-list-item">
+            <a href="../index.html">EN</a>
+          </li>
+          <li class="nav-list-item selected">JA</li>
+        </ul> -->
+      </header>
+      <div class="main">
+        <article>
+          <h1 id="-2024-01-22">開発日記 2024-01-23</h1>
+          <p>皆さんこんにちは！SAFE HAVN STUDIOのkypです。今年2回目の開発日記をお送りします。</p>
+          <h4 id="-saeko-">台北ゲームショウにSAEKOが展示されます</h4>
+          <p>最初のニュースはこちら！今週の1月25日から、台北で開催されるTaipei Game Show 2024にSAEKO: Giantess Dating Simが展示されます。これまで通り、パブリッシャーのHYPER REALさんのブースでの試遊となる予定です。</p>
+          <figure><blockquote class="twitter-tweet"><p lang="zh" dir="ltr">日本新發行商 HYPER REAL 即將參加台北國際電玩展！<br>我們將抽獎送出一日門票給三個人：<br><br>參與方式<br>1⃣關注 <a href="https://twitter.com/HYPERREAL_jp?ref_src=twsrc%5Etfw">@HYPERREAL_jp</a><br>2⃣轉貼此貼<br>※截至 1月22日（星期一）23:59<br><br>三款獨特的遊戲將在 A23 展台等待您的體驗，還有 lain 插畫家安倍吉俊的合作明信片送給大家～<a href="https://twitter.com/hashtag/TaipeiGameShow2024?src=hash&amp;ref_src=twsrc%5Etfw">#TaipeiGameShow2024</a> <a href="https://t.co/QdV1CZLmAQ">pic.twitter.com/QdV1CZLmAQ</a></p>&mdash; HYPER REAL (@HYPERREAL_jp) <a href="https://twitter.com/HYPERREAL_jp/status/1748236674599899254?ref_src=twsrc%5Etfw">January 19, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></figure>
+          <p>遊べるのは、昨年9月の東京ゲームショウで展示したものとほぼ同じビルドです。そのため、開発日記でこれまで伝えてきた内容とはやや違うものになり、特にUIやシステムは不足ぎみな部分があるかもしれません。ただ、製品版と同じ特徴（性癖）は共通してるし、実際にリリースされるゲームには含まれないシナリオが体験できる予定なので、「なんかレアだな〜」くらいに思っていただけると嬉しいです。</p>
+          <p>それから、台北ゲームショウにあわせ、簡体字・繁体字による中国語のローカライズも実装しています！</p>
+          <p>自分のゲームで中国語が動いてるのを見ると、とても嬉しいです。中国語圏の本とか絵、それにゲームも、好きなものがたくさんあるからです。あと個人的には、正方形の漢字が並んでいる様子がボックス建築みたいでかっこいいと思うことがあります。以下は繁体字中国語による冴子との会話シーンですが……なんか、日本語とは違うかっこよさが、あるような？</p>
+          <figure>
+            <img src="./zh.gif" alt="中国語版のスクリーンショット">
+            <figcaption>酷的</figcaption>
+          </figure>
+          <p>ただ、実際のローカライズ作業ではシステム側にバグが多く、何度も手戻りがあって申し訳なかったです。テキストの制御を自前で組んでいるために、新しい言語を追加するときにはけっこう手作業が必要になるのですが、自分が分からない言語の作業だと、コピペをミスりまくる・ミスっていても気づかないということがたくさんありました。指摘した内容が直っていなかったり、指摘した内容を直したら別の変な部分が生まれたりする状況のなか、根気強くLQAを続けてくださった中国語ローカライズ担当のflankoiさんに深く感謝します。</p>
+          <p>そして、次のことを痛感しました。スクリプトの制御は必ずバグる。そして、自分の知らない言語でそのバグを発見するのはすごく難しい。</p>
+          <figure>
+            <img src="zh2.png" alt="中国語版のスクリーンショット">
+            <figcaption>難しい処理の例。というか日本語で禁則処理やってなかったんだ……</figcaption>
+          </figure>
+          <p>何度目かの最修正でうんうん唸っている最中に、頭の中で低い声が響きました。「どうしてテストを書かないんだ？」なぜか脳裏には<a href="https://speakerdeck.com/twada/quality-and-speed-2022-spring-edition?slide=2">アスキー文字で描かれたライオン</a>がいて、憎々しげに僕を睨みつけています。</p>
+          <figure>
+            <img src="test.png" alt="単体テストのソースコード">
+          </figure>
+          <p>というわけで、スクリプト周りにテストを追加しまくりました。今後は、スクリプトの文法がちょっと変だったり、選択肢の実装に不備があったりしても書き終わった瞬間に気づけるから、バグに気づいたり直したりする時間をだいぶ減らせる……はず。</p>
+          <p>テストを書けるようにプログラムを直すのは、けっこうソフトウェアアーキテクチャっぽくて楽しい作業でした。今後、EbitengineのLT会とかで発表できたらいいな。</p>
+          <h4 id="-">その他の進捗</h4>
+          <p>ほかにも、冴子との会話シーンのゲーム性を良くするために、あんな演出やこんな演出を作ったりしました。プレイ時の味わいを損ねたくないので、ここではあまり具体的に書けないんですが、少しずつ良くなり続けている……と思います。</p>
+          <p>あと、前回の開発日記で取り上げたGithubのカンバンとは、少し距離を置き始めています。たしかに、あれはToDoを管理するのにすごく便利なんだけど、これだけはっきりやるべきこととか優先度が決まってると……なんというか……仕事になる。</p>
+          <p>創作活動には色々な方法があると思うけど、僕は圧倒的に衝動側の人間で、作りたいときに作りたいものを作るのが楽しいです。なのに、ToDoで「Aをやる」「そしたらBをやる」「そしたらCを……」って決まってると、途端にやる気がなくなって、あくびとため息が止まらなくなります。過去の自分に、命令されてるみたいな気がするからでしょうか？</p>
+          <p>直したい内容とか忘れにくいし、消すまではいかないけど……やっぽり、少し距離を置くべきかもしれない！できるだけ、そのときの衝動を尊重して、「作っていて楽しいところから作ろう！」という方針でやっていこうと思います。</p>
+          <h4 id="-">おわりに</h4>
+          <p>さむい！僕も台北行きたい！終わり！</p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div>(C) SAFE HAVN STUDIO - email:</div>
+      <address class="flex-grow-1">contact@safehavn.dev</address>
+      <div><a href="/" class="footer-right">TOP</a></div>
+    </footer>
+  </body>
+</html>
