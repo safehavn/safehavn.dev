@@ -1,0 +1,86 @@
+<html>
+  <head>
+    <title>開発日記 2024-04-23 -- SAFE HAVN STUDIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/style.css?ver=20240312" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <meta property="og:title" content="開発日記 2024-04-23" />
+    <meta
+      property="og:description"
+      content="東京ゲームダンジョン、UIの作業、アニメーションエディタとか"
+    />
+    <meta property="og:image" content="https://safehavn.dev/ogp.png" />
+    <meta name="twitter:card" content="summary" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <ul class="nav-list-left">
+          <li class="nav-list-item">
+            <a href="/" class="brand-link">SAFE HAVN STUDIO</a>
+          </li>
+        </ul>
+        <!-- <ul class="nav-list-right">
+          <li class="nav-list-item">
+            <a href="../index.html">EN</a>
+          </li>
+          <li class="nav-list-item selected">JA</li>
+        </ul> -->
+      </header>
+      <div class="main">
+        <article>
+          <h1 id="-2024-05-07">開発日記 2024-05-07</h1>
+          <p>SAFE HAVN STUDIOのkypです。今週（と先週）の開発日記をお送りします。</p>
+          <h4 id="-">ゲームダンジョンに行った</h4>
+          <p>まずはこの話題！東京ゲームダンジョン5にパブリッシャーのHYPER REALが出展し、SAEKOの試遊機も置いてもらいました。日本でのイベント出展は昨年9月の東京ゲームショウ以来だと思うので、なかなか貴重な機会です。</p>
+          <figure><blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">3X-1ブースでsaeko展示中！<br>試遊もできます！<a href="https://twitter.com/hashtag/%E6%9D%B1%E4%BA%AC%E3%82%B2%E3%83%BC%E3%83%A0%E3%83%80%E3%83%B3%E3%82%B8%E3%83%A7%E3%83%B35?src=hash&amp;ref_src=twsrc%5Etfw">#東京ゲームダンジョン5</a> <a href="https://t.co/OzXtYTaAgO">pic.twitter.com/OzXtYTaAgO</a></p>&mdash; koh (@koh9083) <a href="https://twitter.com/koh9083/status/1786609063792705539?ref_src=twsrc%5Etfw">May 4, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></figure>
+          <p>久々の日本のイベントということで、今回は私とkohも会場に行き、ドキドキしながらSAEKOの展示機を見たり（「新たなバグとかないよね......？」）、会場にあったたくさんの面白いゲームを遊びにいったりしました。</p>
+          <p>私はスーパー人見知りモードに入っていたので、基本的には「試遊良いですか？」「ありがとうございました」だけを繰り返したり、それすらできなくてブースの周りをうろついたりしていました。申し訳ない。あまりに情けなくて、途中、アルコールの力を得るためにコンビニでウイスキーの小瓶を買おうか真剣に悩みました。</p>
+          <p>そんな状態のなか話しかけてくれた以前からの知り合いだったり、ゲームの内容について気さくに質問する機会をくれた他ブースの方々には深く感謝しています。あなたがたがいなければ無言で帰宅するところでした。本当にありがとう。</p>
+          <p>そして、会場でSAEKOをプレイしてくださった方々、本当にありがとうございました。中には感想のコメントやスクリーンショットを投稿してくださった方々もいて、本当に感謝しかありません。なんだか恥ずかしくて、あんまり自分だと開発中のスクショとか上げてないんですよね......。</p>
+          <figure><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">SAEKO初試遊<br>ああ…これは演出がうまい…どう考えても絶体絶命としか思えない<br>自分がJDの小さい手に収まる小人にされているとそのテキストで感じられるし事あるごとに圧かけてくる<br>期待通り、完成が楽しみです<a href="https://twitter.com/hashtag/%E6%9D%B1%E4%BA%AC%E3%82%B2%E3%83%BC%E3%83%A0%E3%83%80%E3%83%B3%E3%82%B8%E3%83%A7%E3%83%B35?src=hash&amp;ref_src=twsrc%5Etfw">#東京ゲームダンジョン5</a> <a href="https://t.co/l93OL7hXHC">pic.twitter.com/l93OL7hXHC</a></p>&mdash; くが山 (@9gatsu_mid) <a href="https://twitter.com/9gatsu_mid/status/1786634693452153075?ref_src=twsrc%5Etfw">May 4, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></figure>
+          <figure><blockquote class="twitter-tweet" data-media-max-width="560"><p lang="ja" dir="ltr">SAEKOいいよね… <a href="https://t.co/Krsg4nPjzy">pic.twitter.com/Krsg4nPjzy</a></p>&mdash; たくや@今年こそゲーム完成させたい (@takuyahasonmin) <a href="https://twitter.com/takuyahasonmin/status/1786634299464438208?ref_src=twsrc%5Etfw">May 4, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></figure>
+          <p>ちなみに現在のデモは若干プロトタイプ的なもので、現在は製品版公開に向けてさらに進化した画面を見せられるよう開発を進めております。なので、、、今後は、、、もっとやばい作品ができるはず！乞うご期待、ということでよろしくお願いいたします！</p>
+          <h4 id="gw-">GW中の開発とか</h4>
+          <p>その他の開発。ゴールデンウィークということで、ゲーム開発者の皆様においては多くの進捗があったことと思います。私は......えっと......まあ......ハハ。</p>
+          <p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">うっかりCiv起動したらGWが2日少なくなってました</p>&mdash; kyp (@_newkyp) <a href="https://twitter.com/_newkyp/status/1784648391361999344?ref_src=twsrc%5Etfw">April 28, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+          <p>ところで休日のいいところは何かというと、普段フルタイムで仕事をしているメンバーが、同じくらいのフルタイムでSAEKOの作業をしてくれるということです（私がCivしてる間に）。</p>
+          <p>UIやロゴデザインを担当してくれているmaztaniからは、日夜こんな感じで素晴らしいデザイン案が送られてきました。</p>
+          <figure><img src="./title_1280.png"></figure>
+          <figure><img src="./settingsui.png"></figure>
+          <p>本当にありがとう。今回の開発日記、ありがとうしか言ってなくない？？？</p>
+          <p>自分も、ゴールデンウィーク中は別の仕事も少し減ったので、普段なかなか手をつけることのできないプログラミング的な課題を片付けたりしていました。大半はゲームをリリースするための技術的な宿題のようなもので、ここで紹介するには地味すぎるかなと思ったので......思いきって、独立した技術記事として書いてみました。</p>
+          <ul>
+          <li><a href="https://kyp.jp/posts/240505_ebitengine/">Ebitengineでビルドにアセットを埋め込む</a></li>
+          </ul>
+          <p>いろいろなフィードバックがもらえて嬉しかったので、今後も何か、他の人にも応用できそうなテーマを見つけたら書いていきたいです。</p>
+          <p>あと、ちょっとしたアニメーションビューワを開発しました。</p>
+          <p>EbitengineはデフォルトではGUIを持ちません。基本的にはすべての情報をソースコードから拾うので、SAEKOではアニメーションの情報もすべてコードとして書いていました。新規のアニメーションをkohが描いてくれたとき、</p>
+          <ol>
+          <li>GIF画像などでkohの想定している動きを理解</li>
+          <li>clipファイルの中身を見ながら、プログラムで扱いやすい単位の連番画像として書き出す</li>
+          <li>Goのコードとして速度やループ、差分の設定などを書く</li>
+          </ol>
+          <p>という流れで進めていました。ただ、そうすると「イラストレーターが実際のゲーム画面上の表示を見ながら修正」というようなこともできませんし、言うまでもなく大変です（僕が）。</p>
+          <figure><img src="./cake.png"></figure>
+          <p>そこで、今回はゲーム内のアニメーションの仕組みをリファクタし、以下のような仕組みでイラストレーターも僕もアニメーションを触れるような仕組みを用意しました。</p>
+          <ol>
+          <li>個別のアニメーションに関する設定をJSONファイルに書き出し、GoからはそのJSONを読み込むだけにする。各レイヤーや差分の情報、さらに「ゲーム内のこのステータスにはこの差分を割り当てる」という情報など。</li>
+          <li>ゲーム本体とは別に、JSONファイルを解釈して表示するだけの簡単なビューワを作る。JSONファイルや画像を更新すると、画面上の動きも更新される。</li>
+          <li>イラストレーターに頑張ってJSONの書き方を覚えてもらい、次回からは気合でJSONを書いてもらうようにする（がんばれ！）</li>
+          </ol>
+          <figure><img src="./gyazo.png"></figure>
+          <p>自分もkohもこれでだいぶ工数が減りそうで、仕組みはけっこう気に入ってます。もっと色々紹介したいんですが、スクショには本編のアニメーションがモロに出てくるので、ネタバレ無しで解説するのは難しそう......。SAEKOの製品版とかが出て、ネタバレが公然の秘密になったみたいなタイミングで、もう少し技術的な紹介ができたらいいな〜と思います。</p>
+          <h4 id="-">おわり</h4>
+          <p>今回は珍しく内容のある開発日記だった！おわり！</p>
+          
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div>(C) SAFE HAVN STUDIO - email:</div>
+      <address class="flex-grow-1">contact@safehavn.dev</address>
+      <div><a href="/" class="footer-right">TOP</a></div>
+    </footer>
+  </body>
+</html>
