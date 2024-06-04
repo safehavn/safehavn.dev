@@ -4,7 +4,7 @@ import * as jsdom from 'jsdom';
 const { JSDOM } = jsdom;
 
 // todo: dynamic
-const filepath = './blog/2023-11-14/index.html';
+const filepath = '2024-05-21/index.html';
 const str = fs.readFileSync(`../original/${filepath}`, 'utf8');
 
 const dom = new JSDOM(str, 'text/html');
