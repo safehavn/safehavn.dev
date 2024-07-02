@@ -1,0 +1,151 @@
+<html>
+  <head>
+    <title>開発日記 2024-07-02 -- SAFE HAVN STUDIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/style.css?ver=20240312" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <meta property="og:title" content="開発日記 2024-07-02" />
+    <meta
+      property="og:description"
+      content="Tokyo Sandboxとか本編のシナリオ作業とか"
+    />
+    <meta property="og:image" content="https://safehavn.dev/ogp.png" />
+    <meta name="twitter:card" content="summary" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <ul class="nav-list-left">
+          <li class="nav-list-item">
+            <a href="/" class="brand-link">SAFE HAVN STUDIO</a>
+          </li>
+        </ul>
+        <!-- <ul class="nav-list-right">
+        <li class="nav-list-item">
+          <a href="../index.html">EN</a>
+        </li>
+        <li class="nav-list-item selected">JA</li>
+      </ul> -->
+      </header>
+      <div class="main">
+        <article>
+          <h1 id="-2024-07-02">開発日記 2024-07-02</h1>
+          <p>SAFE HAVN STUDIOのkypです。今回の開発日記をお送りします。</p>
+          <h4 id="tokyo-sandbox">Tokyo Sandbox</h4>
+          <figure>
+            <blockquote class="twitter-tweet">
+              <p lang="tl" dir="ltr">
+                Tokyo Sandbox！
+                <a href="https://t.co/cdYAP8DHFd">pic.twitter.com/cdYAP8DHFd</a>
+              </p>
+              &mdash; kyp (@_newkyp)
+              <a
+                href="https://twitter.com/_newkyp/status/1804408185777983885?ref_src=twsrc%5Etfw"
+                >June 22, 2024</a
+              >
+            </blockquote>
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
+          </figure>
+          <p>
+            6月22日に秋葉原で開催されたインディーゲームイベント、Tokyo Sandbox
+            2024にパブリッシャーのHYPER
+            REALが参加し、SAEKOもデモの試遊機を展示しました。タイミングとしてはちょうどSteamで体験版を公開した直後で、多くの方に展示をプレイしていただいたり、あるいは既にご自身でプレイされた方から感想をいただいたりしました。改めて、参加者の皆様に感謝いたします。
+          </p>
+          <p>
+            ちなみに。当日、会場となったベルサール秋葉原では<a
+              href="https://www.smilefest.com/smilefest2024/"
+              >Smile Fest 2024</a
+            >というグッドスマイルカンパニーの展示会もやっていて、こちらは会場の外にまで長い列ができるほどの盛況ぶりを見せていました。入場無料。めちゃ気になる。いや、とはいえ自分のゲームが展示されてるんだし、インディーゲーム開発者としては少しでも多くのゲームをプレイしてインプットを得るべきだし、今は長時間並んでまで可愛いフィギュアを愛でている場合ではない……！
+          </p>
+          <figure>
+            <img src="./miku.webp" alt="初音ミクのフィギュア" />
+            <figcaption>好き</figcaption>
+          </figure>
+          <p>負けました。とても可愛かったです。</p>
+          <h4 id="-">本編の開発やってる</h4>
+          <p>
+            6月11日のデモ公開から3週間ほどが経ちました。想定以上にたくさんの方にプレイしていただいており、改めて感謝しております。
+          </p>
+          <p>
+            Twitter・Discord・YouTubeなど、デモ公開直後はエゴサするたびに新しい投稿が増えている状況で、正直リリース直後はエゴサの鬼と化していました。ただ、そろそろ本編の開発に戻らなければいけません。そのため、現在は<a
+              href="https://appblock.app/"
+              >AppBlock</a
+            >などあらゆる手段を借り、1日のごく限られた時間にだけSNSを見るようにすべく、懸命にFOMO（取り残される恐怖）と戦っています。
+          </p>
+          <p>今の開発について。</p>
+          <p>
+            6月中は主に本編のシナリオを書いていました。現時点で、エンディングまでのテキストを一通り書き終えています。
+          </p>
+          <p>
+            ただ、これはあくまでゲームに実装する前の素案みたいなもので、ゲームとして考えると足りないテキストがあるし、「//
+            TODO:
+            ここの雑談面白いやつに変える」みたいな未来への無茶振りまであったりして、とても100%完成とは言えません。それから、テキストとしては良い文章でも、実際のゲームに組み込むと長ったるいとか、ゲームシステムと矛盾するとかで修正が必要になるので、FIXにはまだ時間がかかるな〜という感じです。全体の完成度でいうと、だいたい60%〜70%でしょうか。
+          </p>
+          <p>
+            一方、シナリオを書く作業はとても楽しかったです。正直、「このゲームおもしれ〜〜〜」って思った。特に、中盤・終盤のシナリオは、これまで大まかなプロットだけを組んでいた部分なのですが、それが実際のキャラクター同士の会話だったり、ゲームシステム上の選択にうまく当てはまると、書いていて変な脳汁が出てきます。手が勝手にキーボードを叩いてる感じ。もちろん、テキストのFIXに向けてはまだまだやることがあるし、当初考えてた締切を守れるかも正直怪しいのですが、少なくとも今書いているものの肌感覚はだいぶ良いです。
+          </p>
+          <p>
+            結局のところ、シナリオの良し悪しは読み手の主観による部分が大きいので、万人にオススメできる何かができるとは思わないんだけど……少なくとも、体験版のテキストを気に入ってくださった方々にとっては、本編はさらに満足の行くモノになるんじゃないかと思っております。
+          </p>
+          <figure>
+            <img
+              src="./chio.webp"
+              alt="チオ「もう、そんなに汚しちゃって。私と寝るの、そんなに気持ちよかった？」"
+            />
+            <figcaption>チオも元気です</figcaption>
+          </figure>
+          <p>
+            あとは、SAEKOの舞台となる2000年代の雰囲気を出しつつ、読んでて楽しいフレーバー要素を追加するべく、デモには無かった全く新しい画面を作りたいな〜とも考えています。こちら現時点では画面の構想だけですが、今後数週間で実装にも入れるはず。頑張る！
+          </p>
+          <figure>
+            <img src="./mail.webp" alt="携帯電話風の画面UI。受信メール" />
+          </figure>
+          <h4 id="-">おわり</h4>
+          <p>
+            というわけで、今週の開発日記は以上です！エゴサしまくっていた割には生産的だった気がします。これでエゴサを封印したら、きっと、次回はすごいことになるかも。
+          </p>
+          <p>
+            最後に！SAEKOの体験版をプレイしていただいたり、ウィッシュリスト登録してくださった方々に改めて深く感謝いたします。先日、<a
+              href="https://news.denfaminicogamer.jp/news/240617l"
+              >30000ウィッシュリスト突破</a
+            >のニュースが出ましたが、現在の数字は……まあ……30000以上の何らかになっています。
+          </p>
+          <p>
+            創作物の良さと数字は関係ないと思うし、日頃は数字なんてどうでもいいと思いながら作っているのですが、その一方で、数字が伸びると、色々やりたかったことがやりやすくなるのかな〜と思っています。また、プレイ切り抜きのRT数とかならまだしも、ウィッシュリスト数は「作品を良いと思ってくれた人の数」に近似していると思うので、そういう意味でも後押しをもらっていてすごい嬉しいです。
+          </p>
+          <p>
+            この後押しを力にして、今後も誘惑に負けること無く、ゲーム開発を進めていこうと思います。例えば7月頭ということで、Steamのサマーセールもあったけど、どんな誘惑にも負けることなく……なく……
+          </p>
+          <figure>
+            <blockquote class="twitter-tweet">
+              <p lang="ja" dir="ltr">
+                向き合う
+                <a href="https://t.co/44r20ijJr6">pic.twitter.com/44r20ijJr6</a>
+              </p>
+              &mdash; kyp (@_newkyp)
+              <a
+                href="https://twitter.com/_newkyp/status/1807802456430289256?ref_src=twsrc%5Etfw"
+                >July 1, 2024</a
+              >
+            </blockquote>
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
+          </figure>
+          <p>為すべきことを為す。おわり！</p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div>(C) SAFE HAVN STUDIO - email:</div>
+      <address class="flex-grow-1">contact@safehavn.dev</address>
+      <div><a href="/" class="footer-right">TOP</a></div>
+    </footer>
+  </body>
+</html>
