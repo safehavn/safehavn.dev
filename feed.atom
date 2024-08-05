@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="ja">
-  <title>SAFE HAVM STUDIO</title>
+  <title>SAFE HAVN STUDIO</title>
   <link rel="alternate" type="text/html" href="http://safehavn.dev/" />
   <link rel="self" type="application/atom+xml" href="http://safehavn.dev/feed.atom" />
   <author><name>SAFE HAVN STUDIO</name></author>
