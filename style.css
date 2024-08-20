@@ -142,6 +142,11 @@ article > p {
   margin-bottom: 2em;
 }
 
+article li {
+  line-height: 1.5;
+  padding-bottom: 0.5em;
+}
+
 article > center {
   line-height: normal;
 }
