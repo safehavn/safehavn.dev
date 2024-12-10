@@ -1,0 +1,79 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>開発日記 2024-12-10 -- SAFE HAVN STUDIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/style.css?ver=20240820" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS"
+      href="https://safehavn.dev/feed.atom"
+    />
+    <meta property="og:title" content="開発日記 2024-12-10" />
+    <meta property="og:description" content="リリース延期、デモ版サントラ、ケータイ小説" />
+    <meta property="og:image" content="https://safehavn.dev/ogp.png" />
+    <meta name="twitter:card" content="summary" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <ul class="nav-list-left">
+          <li class="nav-list-item">
+            <a href="/" class="brand-link">SAFE HAVN STUDIO</a>
+          </li>
+        </ul>
+        <!-- <ul class="nav-list-right">
+        <li class="nav-list-item">
+          <a href="../index.html">EN</a>
+        </li>
+        <li class="nav-list-item selected">JA</li>
+      </ul> -->
+      </header>
+      <div class="main">
+        <article>
+          <h1 id="-2024-12-10">開発日記 2024-12-10</h1>
+          <p>SAFE HAVN STUDIOのkypです。今回も開発日記をお送りします。</p>
+          <h4 id="saeko-2025-">SAEKOの発売を2025年上半期に延期しました</h4>
+          <figure><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【お知らせ】<br><br>SAEKO: Giantess Dating Simについて、発売予定時期を【2025年上半期】に延期することとなりました。 <br><br>お待たせして申し訳ありません！<br>できるだけ最高の形で皆様に作品を届けられるよう、開発チーム一同努力しておりますので、もうしばらくお待ち下さい🙇 <a href="https://twitter.com/hashtag/saekogame?src=hash&amp;ref_src=twsrc%5Etfw">#saekogame</a> <a href="https://t.co/eO3aeRBEDC">pic.twitter.com/eO3aeRBEDC</a></p>&mdash; SAEKO: Giantess Dating Sim (@saekogame) <a href="https://twitter.com/saekogame/status/1866296152704110784?ref_src=twsrc%5Etfw">December 10, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> </figure>
+          <p>SAEKOはもともと2024年内のリリースを目標にしていたのですが、このたび発売予定を2025年上半期に延期させていただくこととなりました。皆様をもう少しお待たせする形となってしまい、申し訳ありません。</p>
+          <p>開発自体は止まったり遅れたりしているわけではなく、毎日順調に色々なタスクが進んでいて、誰かに早く見せたい成果もたくさんあります。ただ、当初ゲーム内でやりたいと思っていたことを実現させるためには、やらないといけない作業が当初自分が思っていたより大きかった......というのが正直なところです。特に、ゲームの規模がある程度以上に育ってくると、シナリオでもプログラムでも考えないといけないことがどんどん増えてきて、難しさを痛感しました。</p>
+          <p>今後の目標は2025年まで生き延びること！頑張ろうぜ！</p>
+          <h4 id="-">サントラ公開中</h4>
+          <figure><iframe width="560" height="315" src="https://www.youtube.com/embed/Odwini8ktYw?si=Gz1hIKwiTfobG-bU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </figure>
+          <p>あと、今回の発表に合わせて、デモ版のサウンドトラックも<a href="https://www.youtube.com/watch?v=HYrHwEg7FAI&amp;list=PLhB41OFPSrq9h1rPrccs_668lQ4VwobHg&amp;index=3">YouTube</a>・<a href="https://soundcloud.com/kyp_osushi/sets/saeko-giantess-dating-sim-demo-original-soundtrack">Soundcloud</a>で公開しています。デモ版のBGMは締め切り直前に一気に作ったので、聴き返すと直したい部分があったりします。そのため、「いつか時間のあるときに微修正してから出そう」と考えていたのですが、結局そんな時間などなく、思い切って全てビルドのままの音源をアップロードしました。</p>
+          <p>来年のリリースまでには音源を改善する時間が作れそうなので、製品版ではさらに洗練された形でBGMを作れるんじゃないかなと思います。というわけで、まあ、今の音源も歴史的資料として聴いていただけたらいいんじゃないかな〜と思っています。</p>
+          <h4 id="-">開発とか</h4>
+          <p>というわけで、今回は大きなお知らせもありましたが、開発は引き続き進んでいます！特に最近は、これまで形の定まっていなかったケータイ画面が大幅に進化しました。ゲームプレイとしては、昼→夜と１日を進めたあとに遷移して、ちょっとした休憩のように色々なテキストが読める場所にしたいと考えています。</p>
+          <figure>
+            <img src="./root.png" alt="「ﾒｰﾙ」「jﾗﾝﾄﾞ」「電話」「ﾆｭｰｽ」「ｱﾙﾊﾞﾑ」「辞書」「ｾｰﾌﾞ」「ﾛｰﾄﾞ」「次へ」" />
+            <figcaption>リンの後ろ姿も見られる！</figcaption>
+          </figure>
+          <p>ちなみに、ケータイ文化だったら出さないわけにはいかない！ということで、ゲーム内でちょっとしたケータイ小説も読めるようにしています。参考用に当時のケータイ小説をいくつか読んでから、実際のテキストは自分自身で書いたのですが、これがめちゃくちゃ楽しかったです。普段と全然違う文章を書けるからかな。</p>
+          <figure>
+            <img src="./jland.png" alt="｡●コーﾗ・フﾛーﾄ●｡
+
+            誰かを
+
+            　好きになる気持ちは
+
+            　　ｿｰダみたいに透明じゃない"/>
+            <figcaption>恋愛ポエムも読める！</figcaption>
+          </figure>
+          <p>あと、ケータイには絵文字とか物理ボタンの操作とか、プログラム的にしんどい要素がたくさんあり、その辺はけっこう後回しにしています。まあ、テキストが全て出来て、時間に余裕が出てくれば、将来の自分がガーっと一気に実装してしてくれる！はず！たぶん！</p>
+          <h4 id="-">おわりに</h4>
+          <p>というわけで、今回の記事はここまでです！</p>
+          <p>発売が遅れるのは申し訳ないですが、正直一番悲しんでいるのは開発者自身なので（早く発売して秘密とか全部バラしたい！！！！！）、ぜひ暖かい目で見守ったり、発売中の他の素晴らしいゲームを遊んだりしてほしいです。2週間に1度だけ、この開発日記を読みに帰ってきてくれたらさらに嬉しい。</p>
+          <p>おしまい！</p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div>(C) SAFE HAVN STUDIO - email:</div>
+      <address class="flex-grow-1">contact@safehavn.dev</address>
+      <div><a href="/" class="footer-right">TOP</a></div>
+    </footer>
+  </body>
+</html>
