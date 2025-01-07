@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>開発日記 2024-12-24 -- SAFE HAVN STUDIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/style.css?ver=20240820" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS"
+      href="https://safehavn.dev/feed.atom"
+    />
+    <meta property="og:title" content="開発日記 2024-12-24" />
+    <meta
+      property="og:description"
+      content="新年、ケータイ、人妻系の迷惑メール"
+    />
+    <meta property="og:image" content="https://safehavn.dev/ogp.png" />
+    <meta name="twitter:card" content="summary" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <ul class="nav-list-left">
+          <li class="nav-list-item">
+            <a href="/" class="brand-link">SAFE HAVN STUDIO</a>
+          </li>
+        </ul>
+        <!-- <ul class="nav-list-right">
+        <li class="nav-list-item">
+          <a href="../index.html">EN</a>
+        </li>
+        <li class="nav-list-item selected">JA</li>
+      </ul> -->
+      </header>
+      <div class="main">
+        <article>
+          <h1 id="-2025-01-07">開発日記 2025-01-07</h1>
+          <p>あけましておめでとうございます！SAFE HAVN STUDIOのkypです。これは2025年最初の開発日記です。今年もふんわり楽しく記事を書いていこうと思うので、ふんわり楽しく読んでいただけると嬉しいです。</p>
+          <h4 id="-">お正月とか近況とか</h4>
+          <p>直近では年末年始の大型連休がありました。多くのインディーゲーム開発者と同じように、最初はこの休みを創作の時間に充てまくろうと考えていたのですが、結局ほとんどの時間とエネルギーをお正月のあれこれに吸われてしまいました。</p>
+          <p>とはいえ、ゲーム開発の方もじわじわ進めています。エンディングの実装や、シナリオに直結するアニメーションなど、ネタバレに直結する内容なのでここでは公開できないのですが、少しずつゲーム内のいろいろな部品が完成に向かいつつあります。</p>
+          <p>１つのゲームを作るというのは本当に大変で、完成までにはあと数カ月分のタスクが残っているというのが実情です。毎日地味な進捗を積み重ねながら開発を進めているので、もうしばらく気長にお待ちください！</p>
+          <h4 id="-">ケータイ画面とか</h4>
+          <p>ネタバレに直結しない進捗としては、ここ数週間でケータイ画面のコンテンツを増やしていました。これまできちんと言っていなかったと思うのですが、SAEKOのゲームは主に昼画面（小人との会話）・夜画面（冴子との会話）・おやすみ画面（携帯操作）の3画面からなり、その1日のサイクルを何回も繰り返すことでシナリオが進んでいきます。</p>
+          <p>おやすみ画面は3つめの画面で、プレイヤーは冴子のケータイの中身を読むことができます。マウスを動かすと、リンが小さな身体を動かして、その操作に対応するケータイの物理ボタンを押してくれます（十字キーや決定、戻るボタンなど）。それと、グラフィッカーのkohが今回もたくさん素晴らしいアニメーションを描いてくれています。</p>
+          <figure><img src="./1.png" alt="ケータイ画面のトップ。「ﾒｰﾙ」「jﾗﾝﾄﾞ」「電話」「ﾆｭｰｽ」「ｱﾙﾊﾞﾑ」「辞書」「ｾｰﾌﾞ」「ﾛｰﾄﾞ」「次へ」"><figcaption>かわいい</figcaption></figure>
+          <p>ケータイの中身について。<a href="https://safehavn.dev/blog/2024-12-10/">以前の開発日記</a>では、素のテキストが表示されるだけの、かなり仮の状態の画面をお見せしていました。あそこから年末年始でプログラムの実装を頑張り、画面も少しリッチになってきました。</p>
+          <figure><img src="./2.png" alt="魔法のjらんど
+            東京☁️21℃/12℃
+            てんびん座♎ 5位
+
+            ↓↓↓オススメ小説↓↓↓
+            コーラ・フロート
+
+            プロローグ
+            1️ 出会い
+            2 忘れ物">
+            <figcaption></figcaption>
+          </figure>
+          <p>出来上がったものはすごくシンプルなのですが、「ビットマップフォントと、自分で描いた絵文字の画像を同じ行内に表示する」「画面内の特定文字がリンクになっていて、マウスを重ねると別のページに遷移する」「マウスホイールを動かすと、次のリンクが選択されるか表示内容がスクロールする」など、プログラマとしてはすごく難しいことを頑張る必要がありました。</p>
+          <figure>
+            <img src="./3.png" alt="受信メール
+            From 安田さん
+            Sub さっきはありがと😄
+
+            さっきメアド交換してもらった美香です❗️忙しそうだったのにｺﾞﾒﾝﾈ⤵💦
+
+            理学部の女子って少ないから、仲良くしてくれたら嬉しいな💓">
+            <figcaption></figcaption>
+          </figure>
+          <p>SAEKOは<a href="https://ebitengine.org/ja/">Ebitengine</a>というコードベースのミニマルなゲームエンジンを使っているので、こういうちょっと複雑な機構については、基本的に自分で実装する必要があります。単純に考えると、実装量が多くて大変ではあるのですが、逆に「ゲームエンジン由来の問題が少なく、実装方法さえ思いつけばなんでも自力で実装できる」というのがEbitengineの良いところだと思います。</p>
+          <p>実際、どんな複雑なレイアウトでも文字を描画できる機能(<a href="https://zenn.dev/eihigh/articles/ebitengine-text-v2#%E5%87%9D%E3%81%A3%E3%81%9F%E3%81%93%E3%81%A8-(1)-%E3%82%B0%E3%83%AA%E3%83%95%E5%8D%98%E4%BD%8D%E3%81%AE%E6%8F%8F%E7%94%BB">glyph単位での描画</a>)は用意されているので、あとはテキストと画像からそのレイアウトを決める仕組みを考えるだけです。うおお、燃え上がってきた！</p>
+          <figure><img src="./note.webp"><figcaption>複雑な実装をする前はノートに欲しい挙動を書き出します。そのほうが最初の設計がうまく行くからです。でも字が汚すぎて後から読んでも何書いてるか分からないです</figcaption></figure>
+          <p>思い通りのものが実装できたときはとても気持ちいいです。でもすごく疲れる作業でもあります。そういうときはしょうもないスパムメールを書いて気分転換したりしています。</p>
+          <figure><img src="./4.png" alt="受信メール
+            From qlvpolep@wivzm.gz
+            Sub 人妻、欲求不満です…
+
+            はじめまして、久光さゆりです。38歳、社長秘書をしています。
+            サイズは87・59・84でFカップです。">
+            <figcaption>2000年代のケータイといえば人妻系迷惑メール！みんな@を★に変えたりしてたような</figcaption>
+          </figure>
+          <h4 id="-">おわりに</h4>
+          <p>以上！そういえば、今年の目標は「SAEKOをできるだけ完璧な形でリリースすること」そして「SAEKOのリリースが終わったら、表面的には全然違う別のゲームを作り始めること」です。次は人が死なないゲームを作りたいです。でも、まずはSAEKOを頑張る！不健康な要素がたくさんありますが、しばらくこの世界観にお付き合いいただけると嬉しいです。</p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div>(C) SAFE HAVN STUDIO - email:</div>
+      <address class="flex-grow-1">contact@safehavn.dev</address>
+      <div><a href="/" class="footer-right">TOP</a></div>
+    </footer>
+  </body>
+</html>
