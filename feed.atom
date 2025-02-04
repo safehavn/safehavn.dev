@@ -6,15 +6,21 @@
   <author><name>SAFE HAVN STUDIO</name></author>
   <id>tag:safehavn.dev,2023:feed</id>
   <updated>2025-01-21T22:23:07Z</updated>
-    <entry>
+  <entry>
+    <title>開発日記 2025-02-04 -- SAFE HAVN STUDIO</title>
+    <link rel="alternate" href="https://safehavn.dev/blog/2025-02-04/" />
+    <id>tag:safehavn.dev,2023:entry://2025-02-04</id>
+    <updated>>2025-02-04T21:51:26Z</updated>
+    <summary>アニメーションとエンディングの実装</summary>
+  </entry>
+  <entry>
     <title>開発日記 2025-01-21 -- SAFE HAVN STUDIO</title>
     <link rel="alternate" href="https://safehavn.dev/blog/2025-01-21/" />
     <id>tag:safehavn.dev,2023:entry://2025-01-21</id>
     <updated>>2024-05-01-21T21:24:07Z</updated>
     <summary>台北ゲームショウ（行けない）</summary>
   </entry>
-  <updated>2025-01-07T21:23:07Z</updated>
-    <entry>
+  <entry>
     <title>開発日記 2025-01-07 -- SAFE HAVN STUDIO</title>
     <link rel="alternate" href="https://safehavn.dev/blog/2025-01-07/" />
     <id>tag:safehavn.dev,2023:entry://2025-01-07</id>
