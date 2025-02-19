@@ -6,39 +6,46 @@
   <author><name>SAFE HAVN STUDIO</name></author>
   <id>tag:safehavn.dev,2023:feed</id>
   <updated>2025-01-21T22:23:07Z</updated>
+    <entry>
+    <title>開発日記 2025-02-19 -- SAFE HAVN STUDIO</title>
+    <link rel="alternate" href="https://safehavn.dev/blog/2025-02-19/" />
+    <id>tag:safehavn.dev,2023:entry://2025-02-19</id>
+    <updated>2025-02-19T22:27:17</updated>
+    <summary>さらばスケジュール管理</summary>
+  </entry>
   <entry>
     <title>開発日記 2025-02-04 -- SAFE HAVN STUDIO</title>
     <link rel="alternate" href="https://safehavn.dev/blog/2025-02-04/" />
     <id>tag:safehavn.dev,2023:entry://2025-02-04</id>
-    <updated>>2025-02-04T21:51:26Z</updated>
+    <updated>2025-02-04T21:51:26Z</updated>
     <summary>アニメーションとエンディングの実装</summary>
   </entry>
   <entry>
     <title>開発日記 2025-01-21 -- SAFE HAVN STUDIO</title>
     <link rel="alternate" href="https://safehavn.dev/blog/2025-01-21/" />
     <id>tag:safehavn.dev,2023:entry://2025-01-21</id>
-    <updated>>2024-05-01-21T21:24:07Z</updated>
+    <updated>2024-05-01-21T21:24:07Z</updated>
     <summary>台北ゲームショウ（行けない）</summary>
   </entry>
   <entry>
     <title>開発日記 2025-01-07 -- SAFE HAVN STUDIO</title>
     <link rel="alternate" href="https://safehavn.dev/blog/2025-01-07/" />
     <id>tag:safehavn.dev,2023:entry://2025-01-07</id>
-    <updated>>2024-05-01-07T21:24:07Z</updated>
+    <updated>2024-05-01-07T21:24:07Z</updated>
     <summary>新年、ケータイ、人妻系の迷惑メール</summary>
   </entry>
   <entry>
     <title>開発日記 2024-12-24 -- SAFE HAVN STUDIO</title>
     <link rel="alternate" href="https://safehavn.dev/blog/2024-12-24/" />
     <id>tag:safehavn.dev,2023:entry://2024-12-24</id>
-    <updated>>2024-12-24T21:28:07Z</updated>
+    <updated>2024-12-24T21:28:07Z</updated>
     <summary>ネタバレの恐怖</summary>
   </entry>
   <entry>
     <title>開発日記 2024-12-10 -- SAFE HAVN STUDIO</title>
     <link rel="alternate" href="https://safehavn.dev/blog/2024-12-10/" />
     <id>tag:safehavn.dev,2023:entry://2024-12-10</id>
-    <updated>>2024-12-10T22:01:07Z</updated>
+    <updated>2024-12-10T22:01:07Z</updated>
     <summary>リリース延期、デモ版サントラ、ケータイ小説</summary>
   </entry>
   <entry>
