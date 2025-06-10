@@ -7,7 +7,14 @@
     <name>SAFE HAVN STUDIO</name>
   </author>
   <id>tag:safehavn.dev,2023:feed</id>
-  <updated>2025-04-22T20:26:00</updated>
+  <updated>2025-06-10T23:09:00</updated>
+  <entry>
+    <title>SAEKOを発売開始しました (開発日記 2025-06-10) -- SAFE HAVN STUDIO</title>
+    <link rel="alternate" href="https://safehavn.dev/blog/2025-06-10-release/" />
+    <id>tag:safehavn.dev,2023:entry://2025-06-10</id>
+    <updated>2025-06-10T23:09:00</updated>
+    <summary>Steam, DLsite, Stoveで販売予定</summary>
+  </entry>
   <entry>
     <title>SAEKOが5月29日に発売されます -- SAFE HAVN STUDIO</title>
     <link rel="alternate" href="https://safehavn.dev/blog/2025-05-23-prerelease/" />
