@@ -7,7 +7,14 @@
     <name>SAFE HAVN STUDIO</name>
   </author>
   <id>tag:safehavn.dev,2023:feed</id>
-  <updated>2025-06-10T23:09:00</updated>
+  <updated>2025-07-15T22:15:54</updated>
+  <entry>
+    <title>開発日記 2025-07-15 -- SAFE HAVN STUDIO</title>
+    <link rel="alternate" href="https://safehavn.dev/blog/2025-07-15/" />
+    <id>tag:safehavn.dev,2023:entry://2025-07-15</id>
+    <updated>2025-07-15T22:15:54</updated>
+    <summary>Bitsummit, サントラ, 進捗</summary>
+  </entry>
   <entry>
     <title>SAEKOを発売開始しました (開発日記 2025-06-10) -- SAFE HAVN STUDIO</title>
     <link rel="alternate" href="https://safehavn.dev/blog/2025-06-10-release/" />
