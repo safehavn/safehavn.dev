@@ -1,0 +1,128 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>開発日記 2025-08-12 -- SAFE HAVN STUDIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/style.css?ver=20240820" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS"
+      href="https://safehavn.dev/feed.atom"
+    />
+    <meta property="og:title" content="開発日記 2025-08-12" />
+    <meta property="og:description" content="gamescom（予定）" />
+    <meta property="og:image" content="https://safehavn.dev/ogp.png" />
+    <meta name="twitter:card" content="summary" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <ul class="nav-list-left">
+          <li class="nav-list-item">
+            <a href="/" class="brand-link">SAFE HAVN STUDIO</a>
+          </li>
+        </ul>
+        <!-- <ul class="nav-list-right">
+        <li class="nav-list-item">
+          <a href="../index.html">EN</a>
+        </li>
+        <li class="nav-list-item selected">JA</li>
+      </ul> -->
+      </header>
+      <div class="main">
+        <article>
+          <h1 id="-2025-07-29">開発日記 2025-08-12</h1>
+          <p>こんにちは。天然温泉(kyp)です。これは開発日記です。</p>
+          <h4 id="gamescom-">gamescom（予定）</h4>
+          <p>
+            8月20日〜24日に、ドイツのケルンでgamescomが開催されます。（旧）E3・TGSと並んで世界三大ゲームショウの1つと言われているイベントです。
+          </p>
+          <p>
+            初の海外イベントとして、SAFE HAVN
+            STUDIOのメンバーは来週からドイツに向かいます。そして、「SAEKO:
+            Giantess Dating Sim」も、<a
+              href="https://www.vipo.or.jp/news/46620/"
+              >ジャパンパビリオン</a
+            >の一員として展示されるはずです。......はず？
+          </p>
+          <figure>
+            <blockquote class="twitter-tweet" data-media-max-width="560">
+              <p lang="en" dir="ltr">
+                We (the game and the devs) are going to take part in
+                <a href="https://twitter.com/gamescom?ref_src=twsrc%5Etfw"
+                  >@gamescom</a
+                >
+                this year! It&#39;s first oversea event for us and we&#39;re
+                more than excited.<br />Can&#39;t wait to trinken viel Kölsch 🍻
+                <a href="https://t.co/LCf2mLUdwc">pic.twitter.com/LCf2mLUdwc</a>
+              </p>
+              &mdash; SAEKO: Giantess Dating Sim | OUT NOW (@saekogame)
+              <a
+                href="https://twitter.com/saekogame/status/1935594237300773263?ref_src=twsrc%5Etfw"
+                >June 19, 2025</a
+              >
+            </blockquote>
+
+            <script
+              async
+              src="https://platform.twitter.com/widgets.js"
+              charset="utf-8"
+            ></script>
+            <figcaption>これになれる...はず</figcaption>
+          </figure>
+          <p>
+            gamescomに向けて、数週間前からノベルティやちょっとしたイベントの準備などを進めていて、本来はこの記事でその告知をしようと思っていました。ただ、自分たちにはコントロールできない出来事が起きていて、会場でのゲーム展示ができない可能性が1%くらい出ています。
+          </p>
+          <p>
+            もちろん、残りの99%を引き、何事もなく展示できることを強く信じていますが、テンション的にはっきり宣伝するのが少し難しい状況です。事態が解決したら、<a
+              href="https://twitter.com/saekogame"
+              >Twitter</a
+            >や<a href="https://discord.com/invite/3U7H7CjgxP">Discord</a
+            >などで告知をしようと思いますので、特にgamescomにお越しになる予定がある方は定期的にチェックしていただければと思います。
+          </p>
+          <h4 id="-">進捗とか</h4>
+          <p>
+            事務的な作業がたくさんあったり、外に出るたびに体力の99%を奪い取られたりして、この2週間はなかなかゲーム制作の時間が取れませんでした。それでも、前回の開発日記で触れた「SAEKOの移植作業」「新しいゲームの制作」について、どちらもゆっくりではありますが着実に進んでいると思います。
+          </p>
+          <p>
+            複数のプロジェクトを同時並行で進めるというのが初めてなので、10分ごとに開くプロジェクトを変えたり、最初はなかなか集中に苦しんでいました。ただ、「平日はSAEKO」「土日は新プロジェクト」みたいな形で、自分の中でルールを決めたら、だいぶ思考がスッキリした気がします。新しいプロジェクトのほうがコードが綺麗で楽しいので、土日が楽しみという感覚を久々に取り戻しました。まあ、結局、やっていることは家に引きこもってキーボードを打ってるだけなんだけど......。
+          </p>
+          <p>
+            あと、S....chへの移植について。ゲーム専用機への移植ということで、環境構築やN......o特有のライブラリの理解などで最初は苦しんでいたのですが、Ebitengine作者の<a
+              href="https://x.com/hajimehoshi"
+              >星一</a
+            >さんの助けもあり、だいぶ順調に進み始めています。
+          </p>
+          <p>
+            テキストやアニメーションの描画、効果音や音楽の再生など、ゲームプレイの基本的な部分については、PC版から特に何の調整もせずに動いたのでびっくりしました。ファイルのロード／セーブや、コントローラー用のUIなど、細かい部分ではまだ実装が必要ですが、想定よりはだいぶスムーズです。
+          </p>
+          <p>
+            移植があっさり終わったら、余った時間で追加コンテンツの実装とかを行いたいな〜と思っていますが、はたして本当に実現するのか、それともフラグとなってしまうのか......？
+          </p>
+          <h4 id="-">おわり</h4>
+          <p>
+            今回の日記は薄めです。SAEKOも新プロジェクトも準備中なので、しばらくはそんな感じになりそう。
+          </p>
+          <p>
+            SAEKOを作り終わってから、社会的なタスクが増えて、その中にはも〜〜〜〜〜全然エモくないものもあります。めっちゃ疲れる。一方で、コードの適切なアーキテクチャを考えたり、次回作のテキストを書いたりするのはやっぱり楽しくて、今後も社会的な決まりや名誉とはできるだけ無縁な場所で、できるだけ素朴な形でゲームを作りたいと思っています。
+          </p>
+          <p><br /></p>
+          <p>
+            ...まあ、もちろん、それはそれとしてお金は欲しいし、ドイツにも行きたいけどね！！！ブースで気持ちよくビールを飲みながら接客したい！！！
+          </p>
+          <p>
+            いろいろ不安はあるけど、ひとまずはドイツに行けると信じて準備を進めます。ダメだったら日本でストゼロとか飲みます。
+          </p>
+          <p>おわり！</p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div>(C) SAFE HAVN STUDIO - email:</div>
+      <address class="flex-grow-1">contact@safehavn.dev</address>
+      <div><a href="/" class="footer-right">TOP</a></div>
+    </footer>
+  </body>
+</html>

@@ -7,7 +7,14 @@
     <name>SAFE HAVN STUDIO</name>
   </author>
   <id>tag:safehavn.dev,2023:feed</id>
-  <updated>2025-07-29T22:15:54</updated>
+  <updated>2025-08-12T15:41:54</updated>
+  <entry>
+    <title>開発日記 2025-08-12 -- SAFE HAVN STUDIO</title>
+    <link rel="alternate" href="https://safehavn.dev/blog/2025-08-12/" />
+    <id>tag:safehavn.dev,2023:entry://2025-08-12</id>
+    <updated>2025-08-12T15:41:54</updated>
+    <summary>gamescom（予定）</summary>
+  </entry>
   <entry>
     <title>開発日記 2025-07-29 -- SAFE HAVN STUDIO</title>
     <link rel="alternate" href="https://safehavn.dev/blog/2025-07-29/" />
