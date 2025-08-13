@@ -137,6 +137,19 @@ h1 {
   padding: 0 0 1em 0;
 }
 
+.notice-fake {
+  border-bottom: none;
+  padding: 1em;
+  margin-bottom: 2em;
+  line-height: 1.5em;
+}
+
+.notice-fake-bottom {
+  white-space: nowrap;
+  overflow: hidden;
+  line-clamp: 4;
+}
+
 article > p {
   line-height: 1.5;
   margin-bottom: 2em;
