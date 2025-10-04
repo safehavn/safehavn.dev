@@ -11,6 +11,8 @@ body {
   margin: 0;
   padding: 0;
 
+  scroll-behavior: smooth;
+
   line-height: 36px;
   box-sizing: border-box;
 }
@@ -142,6 +144,20 @@ h1 {
   padding: 1em;
   margin-bottom: 2em;
   line-height: 1.5em;
+}
+
+.notice-quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notice-quiz ol {
+  padding-inline-start: 0;
+}
+
+.notice-quize li {
+  padding: 0;
 }
 
 .notice-fake-bottom {
