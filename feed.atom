@@ -9,6 +9,27 @@
   <id>tag:safehavn.dev,2023:feed</id>
   <updated>2025-08-12T15:41:54</updated>
   <entry>
+    <title>Daily SAEKO #2</title>
+    <link rel="alternate" href="https://safehavn.dev/blog/2025-10-06-day2/" />
+    <id>tag:safehavn.dev,2023:entry://2025-10-06</id>
+    <updated>2025-10-06T10:53:54</updated>
+    <summary>マルとキナ、プレイヤーの楽しみについて</summary>
+  </entry>
+  <entry>
+    <title>Daily SAEKO #1</title>
+    <link rel="alternate" href="https://safehavn.dev/blog/2025-10-05/" />
+    <id>tag:safehavn.dev,2023:entry://2025-10-05</id>
+    <updated>2025-10-05T15:41:54</updated>
+    <summary>モコとタキ、1日目のシナリオについて</summary>
+  </entry>
+  <entry>
+    <title>Daily SAEKO #0: はじめに</title>
+    <link rel="alternate" href="https://safehavn.dev/blog/2025-10-04/" />
+    <id>tag:safehavn.dev,2023:entry://2025-10-04</id>
+    <updated>2025-10-04T15:41:54</updated>
+    <summary>10月5日から12日まで、イラストとブログの連続投稿を行います！</summary>
+  </entry>
+  <entry>
     <title>開発日記 2025-08-12 -- SAFE HAVN STUDIO</title>
     <link rel="alternate" href="https://safehavn.dev/blog/2025-08-12/" />
     <id>tag:safehavn.dev,2023:entry://2025-08-12</id>
