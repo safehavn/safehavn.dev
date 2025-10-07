@@ -1,0 +1,157 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Daily SAEKO #3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/style.css?ver=20251006" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS"
+      href="https://safehavn.dev/feed.atom"
+    />
+    <meta property="og:title" content="Daily SAEKO #3" />
+    <meta property="og:description" content="ユイと生存者分岐について" />
+    <meta property="og:image" content="https://safehavn.dev/ogp.png" />
+    <meta name="twitter:card" content="summary" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <ul class="nav-list-left">
+          <li class="nav-list-item">
+            <a href="/" class="brand-link">SAFE HAVN STUDIO</a>
+          </li>
+        </ul>
+        <!-- <ul class="nav-list-right">
+        <li class="nav-list-item">
+          <a href="../index.html">EN</a>
+        </li>
+        <li class="nav-list-item selected">JA</li>
+      </ul> -->
+      </header>
+      <div class="main">
+        <article>
+          <div style="min-height: 100vh">
+            <div class="notice notice-quiz">
+              <h4 id="-">クイズ</h4>
+              <p>ユイが飼っているペットの種類は？</p>
+              <ol>
+                <li><a href="#">犬</a></li>
+                <li><a href="#">猫</a></li>
+                <li><a href="#spoiler">その他</a></li>
+              </ol>
+            </div>
+            <figure id="store">
+              <iframe
+                src="https://store.steampowered.com/widget/2492120/"
+                frameborder="0"
+                width="646"
+                height="190"
+              ></iframe>
+              <figcaption>答えはここにある</figcaption>
+            </figure>
+          </div>
+          <p id="spoiler"><strong>正解おめでとう！！</strong></p>
+          <figure>
+            <img src="./illust.png" />
+            <figcaption>もしも〜し。わたしの声、聞こえてるかな〜？</figcaption>
+          </figure>
+
+          <p>
+            ということで今日は10月7日、Daily
+            SAEKOの3日目です。実は、昨日までの2日分は事前に書き溜めていたのですが、今日からは何も用意しておらず、前日もしくは当日に気合で書き進める形をとります。だんだん短くなってきたらすみません。せめて遅刻しないようにはしたい…。
+          </p>
+          <p>
+            ゲーム内では、3日目はユイが登場し、リンと一緒に糸電話を作ったりします。ゲーム的には、2日目まででゲームシステムの解説が終わり、ここから「SAEKO本番スタート！」という感じです。食べ物を与える相手も、1日目はタキの指示で、2日目ではパラメータで選ぶことができたのですが、3日目はついに自分の意志で選ぶ必要が出てきます。ここからが管理人の本領発揮、というわけです。
+            （ちなみに、3日目までは「誰にも食べ物を渡さない」という条件のバッドエンドがあります。見たことない人はぜひ試してみてください）
+          </p>
+          <p>
+            3日目から5日目までは生存者分岐が存在し、キナ・ユイ・シモンの誰かを生き残らせ、それ以外を冴子に差し出すことになります。ゲームを作る人なら分かると思いますが、分岐を扱うというのは本当〜〜〜〜〜に大変なことです。特にSAEKOの生存者分岐はまるっと登場人物が変わり、セリフも使い回せないので本当に難しかった記憶があります。（「◯◯を生き残らせたい！」という希望があるのは分かるし、キャラクターを愛してくれている証拠だと思うので本当に嬉しいんですが、それでゲームを作り切るのはとても大変です。特にSAEKOみたいに明確な話の流れがある場合）
+          </p>
+          <p>
+            それでもなんとかゲームを作りきれるようにするために、生存者分岐のある3〜5日目は1日の大まかな流れのようなものを共通化し、キャラクターが誰であっても話が進むように頑張っていました。その流れはこんな感じです：
+          </p>
+          <ol>
+            <li>新しいキャラクター（ユイ→シモン→アカリ）がやってくる。</li>
+            <li>そのキャラクターが問題を起こし、リンが対応する。</li>
+            <li>
+              キナ、ユイ、シモンのうち、その日生き残っているキャラとリンが会話する。
+            </li>
+            <li>ご飯タイム。ご飯をあげた人が変なことする</li>
+          </ol>
+          <p>
+            こんな感じ。この流れを作ると、(a)新キャラとリンの会話
+            (b)前日の生存者とリンの会話 (c)その日の犠牲とリンの会話
+            の3つのパートで済み、(a)は日によって固定だし、(b)と(c)は互いに独立なので、考えるパターンが少なくて済みます。もちろん、実際は(a)(b)(c)の中にも細かい分岐があり、ある程度は生き残り同士の掛け合いが生まれるようにしていますが…。
+          </p>
+          <figure>
+            <img
+              src="./shimon.png"
+              alt="...だが、あのキナとかいう女、案外チョロかったぜ。態度はツンツンしてたが、オレに惚れてるのは丸見えさ。"
+            />
+            <figcaption>シモンは特に他人との会話が多いです</figcaption>
+          </figure>
+          <p>
+            こうして生存者分岐の準備が整い、3日目のテーマは「プレイヤーに誰を殺すか決めさせること」になりました。そして、誰を差し出すか、プレイヤーには極力悩んでほしかったので、キナと同じくらい魅力的で、かつキナとは全く方向性が異なるキャラクターを用意しました。そう、そしてそれがユイです。
+          </p>
+          <figure>
+            <img
+              src="yui.jpg"
+              alt="へえ、管理人！なんか、すごくカッコいい肩書きだねえ。"
+            />
+            <figcaption>
+              小人の中でほぼ唯一、出会ったときからリンに優しい
+            </figcaption>
+          </figure>
+          <p>
+            パンクガールで反抗的なキナと違って、ユイはOLで従順です。初対面の時点から、キナはリンに対して厳しく当たり続けますが、ユイは逆にリンを褒め、良い子ちゃんのフリをします。……フリだけど。
+          </p>
+          <p>
+            ユイは社会性が高く、自分に求められてきた振る舞いを理解してきた女の子です。見た目からはっちゃけているキナとは好対照で、表向きはまじめな事務服を羽織り、にこにこ笑って頭の良くないふりをします。でも実は相当頭が切れて、自分の欲望のためなら躊躇せず行動する力もあります。
+          </p>
+          <p>
+            ３日目の目的はキナとユイの間で迷ってもらうことだったのですが、プロットの段階でパブリッシャーに試遊してもらったときには、全員がキナを生き残らせることを選びました。キナは前日からいるキャラクターなので、仕方ないと思います。そこからシナリオを修正し、ユイとキナの掛け合いを増やし（キナに怒られてユイが嘘泣きするシーンを付け足したりしました）、もっとプレイヤーにユイのことを知ってもらえるように工夫しました。ただ、Steamの実績解除率などを見る限りでは、やっぱりキナが圧倒的人気を誇っているようです。
+          </p>
+          <figure>
+            <img src="./achievement.png" />
+            <figcaption>
+              <a href="https://steamcommunity.com/stats/2492120/achievements"
+                >Steam実績データ。ユイとシモンはだいたい15〜18%くらい</a
+              >
+            </figcaption>
+          </figure>
+          <p>
+            個人的には、ユイの生存会話には好きなものが多いので、ぜひ5日目の会話まで確かめてみてほしいです。特にSMプレイが好きな人におすすめ。
+          </p>
+          <p><br /></p>
+          <p>
+            そうだ、あと3日目の夜について！初めて自分の意志で犠牲者を選んだあと、リンは冴子に連れられてショッピングに行きます。冴子への感情をぐちゃぐちゃにしてほしいので入れたシーンでしたが、実際そういう反応が多く、とても嬉しいです。
+          </p>
+          <p>
+            Curse Crazyさんの<a
+              href="https://www.giantessworld.net/viewstory.php?sid=7565&amp;textsize=0&amp;chapter=8"
+              >Endless</a
+            >という小説があります。SAEKOのプロットはここから多くの影響を受けており、買い物のシーンもその１つでした。これまで傲慢に振る舞っていたヒロインは、外に出ると普通の女の子の１人に過ぎなくて、周囲の目を気にしながらお店に入ります。主人公も、逃げ出せるかなとか最初は考えてるんだけど、買い物に付き合っているうちに感覚がバグってきて、だんだん一緒にデートをしている気分になります。（Endlessは小人じゃない側のキャラがいわゆるナーディーなキャラなので、「自分の
+            部屋での小人に対する強さ」「外の世界での他人に対する弱さ」がより対照的で、脳の感覚がバグっていきます。とても好きな場面です）
+          </p>
+          <figure>
+            <img src="out.png" />
+            <figcaption>外の世界には、冴子より背の高い人間もいる</figcaption>
+          </figure>
+          <p>
+            ここで買ったアクセサリーは、ゲームの後半の重要な場面で再び登場します。まじで...最高だよな...こういうの...。自画自賛に聞こえるかもだけど、思いついたときは自分のことを天才だと思いました。今もそう思っています。<strong>過去の</strong>自分、天才！
+          </p>
+          <p><br /></p>
+          <p>今回はここまで！次回の記事をお楽しみに！</p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div>(C) SAFE HAVN STUDIO - email:</div>
+      <address class="flex-grow-1">contact@safehavn.dev</address>
+      <div><a href="/" class="footer-right">TOP</a></div>
+    </footer>
+  </body>
+</html>
