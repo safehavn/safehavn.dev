@@ -7,7 +7,14 @@
     <name>SAFE HAVN STUDIO</name>
   </author>
   <id>tag:safehavn.dev,2023:feed</id>
-  <updated>2025-10-07T20:41:54</updated>
+  <updated>2025-10-08T20:41:54</updated>
+  <entry>
+    <title>Daily SAEKO #4</title>
+    <link rel="alternate" href="https://safehavn.dev/blog/2025-10-08-day4/" />
+    <id>tag:safehavn.dev,2023:entry://2025-10-08</id>
+    <updated>2025-10-08T20:41:54</updated>
+    <summary>シモンとキャラクターの性格について</summary>
+  </entry>
   <entry>
     <title>Daily SAEKO #3</title>
     <link rel="alternate" href="https://safehavn.dev/blog/2025-10-07-day3/" />
