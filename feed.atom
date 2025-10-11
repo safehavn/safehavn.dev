@@ -7,7 +7,28 @@
     <name>SAFE HAVN STUDIO</name>
   </author>
   <id>tag:safehavn.dev,2023:feed</id>
-  <updated>2025-10-08T20:41:54</updated>
+  <updated>2025-10-11T15:41:54</updated>
+  <entry>
+    <title>Daily SAEKO #7</title>
+    <link rel="alternate" href="https://safehavn.dev/blog/2025-10-11-day7/" />
+    <id>tag:safehavn.dev,2023:entry://2025-10-11</id>
+    <updated>2025-10-11T15:41:54</updated>
+    <summary>最終回</summary>
+  </entry>
+  <entry>
+    <title>Daily SAEKO #6</title>
+    <link rel="alternate" href="https://safehavn.dev/blog/2025-10-10-day6/" />
+    <id>tag:safehavn.dev,2023:entry://2025-10-10</id>
+    <updated>2025-10-10T20:41:54</updated>
+    <summary>冴子とゲームの主題について</summary>
+  </entry>
+  <entry>
+    <title>Daily SAEKO #5</title>
+    <link rel="alternate" href="https://safehavn.dev/blog/2025-10-09-day5/" />
+    <id>tag:safehavn.dev,2023:entry://2025-10-09</id>
+    <updated>2025-10-09T20:41:54</updated>
+    <summary>クララと腋</summary>
+  </entry>
   <entry>
     <title>Daily SAEKO #4</title>
     <link rel="alternate" href="https://safehavn.dev/blog/2025-10-08-day4/" />
