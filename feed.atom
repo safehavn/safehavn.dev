@@ -7,7 +7,21 @@
     <name>SAFE HAVN STUDIO</name>
   </author>
   <id>tag:safehavn.dev,2023:feed</id>
-  <updated>2025-10-11T15:41:54</updated>
+  <updated>2025-12-23T23:41:54</updated>
+  <entry>
+    <title>開発日記 2025-12-23 -- SAFE HAVN STUDIO</title>
+    <link rel="alternate" href="https://safehavn.dev/blog/2025-12-23/" />
+    <id>tag:safehavn.dev,2023:entry://2025-12-23</id>
+    <updated>2025-12-23T23:41:54</updated>
+    <summary>良いお年を</summary>
+  </entry>
+  <entry>
+    <title>(開発)日記 2025-12-09 -- SAFE HAVN STUDIO</title>
+    <link rel="alternate" href="https://safehavn.dev/blog/2025-12-09/" />
+    <id>tag:safehavn.dev,2023:entry://2025-12-09</id>
+    <updated>2025-12-09T15:41:54</updated>
+    <summary>近況報告</summary>
+  </entry>
   <entry>
     <title>Daily SAEKO #7</title>
     <link rel="alternate" href="https://safehavn.dev/blog/2025-10-11-day7/" />
