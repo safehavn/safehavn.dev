@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>開発日記 2026-01-27 -- SAFE HAVN STUDIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/style.css?ver=20240820" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS"
+      href="https://safehavn.dev/feed.atom"
+    />
+    <meta property="og:title" content="開発日記 2026-01-27" />
+    <meta
+      property="og:description"
+      content="本物のインディー精神を味わうがいい"
+    />
+    <meta property="og:image" content="https://safehavn.dev/ogp.png" />
+    <meta name="twitter:card" content="summary" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <ul class="nav-list-left">
+          <li class="nav-list-item">
+            <a href="/" class="brand-link">SAFE HAVN STUDIO</a>
+          </li>
+        </ul>
+        <!-- <ul class="nav-list-right">
+        <li class="nav-list-item">
+          <a href="../index.html">EN</a>
+        </li>
+        <li class="nav-list-item selected">JA</li>
+      </ul> -->
+      </header>
+      <div class="main">
+        <article>
+          <h1>開発日記 2026-01-27</h1>
+          <p>こんにちは。kypです。これは開発日記です。</p>
+          <h4 id="-">書けることがない</h4>
+          <p>
+            ここ数ヶ月ずっとこんな感じで申し訳ないのですが、開発日記に書けることが本当に少ないです。1ヶ月ぶりに記事を書こうとしてエディタを開いたのですが、書けるようなことが思いつかず、皿洗いしてシャワーを浴びてご飯を食べました。それでもまだ何を書くか悩んでいます。
+          </p>
+          <p>
+            作業をしていない、というわけではなく、むしろこの1ヶ月はかなり長い時間SAEKOの作業をしていました。ただ、わりと多くの大人が関わっている事柄が多く、勝手にブログで書いたら怒られる気がする......してたんだけど......
+          </p>
+          <p>
+            別に書いちゃっていいか！怒られるの好きだし！本物のインディー精神を味わうがいい！
+          </p>
+          <h4 id="-">ローカライズ作業</h4>
+          <p>
+            先月の開発日記で触れた通り、昨年の末頃に新規言語への対応を発表し、今月はその組み込み作業を行いました。もちろん、実際にテキストを考えてくださる翻訳者の方が一番大変だと思うのですが、それをゲームに組み込む作業も想像以上に大変で、なかなかの苦境を体験しました。
+          </p>
+          <p>
+            特に、SAEKOはノベルゲームとしてのスクリプトを自作していて、しかも作り始めた当初はまさかこんなに翻訳されることになるとは思ってもいなかったと思います。これまでの英中韓への対応を通して、少しずつ多言語対応のノウハウは溜め込んできたつもりだったのですが、ヨーロッパ系の言語にはまた別の難しさがあり、頻繁に過去の自分を恨みました。
+          </p>
+          <p>
+            あと、スクリプトに直接関係のない難しさとして、文字数の問題があります。日本語のテキストを英語に直すと、画面上では最大1.5倍くらい長くなります。なので、ゲームのUIを組む際にはスペースに気を遣う必要があるのですが、EU系の言語では2倍どころじゃなく長くなる傾向があってびっくりしました。
+          </p>
+          <p>例えば、日本語で以下のセリフがあります。</p>
+          <pre><code>きっと皆、元の自分なんて忘れて、
+別の誰かに生まれ変わりたいのよね？
+</code></pre>
+          <p>
+            これは33文字で、等幅フォントだとアルファベット66文字分の長さです。
+          </p>
+          <p>で、これを英語にすると</p>
+          <pre><code>I'm sure they all want <span class="hljs-keyword">to</span> forget who they used <span class="hljs-keyword">to</span> be <span class="hljs-keyword">and</span> <span class="hljs-keyword">get</span> reborn <span class="hljs-keyword">as</span> someone <span class="hljs-keyword">else</span>.
+</code></pre>
+          <p>
+            になります。84文字で、日本語の1.2倍くらいですが、実際は単語の間に改行を挟めないのでレイアウトとしてはもう少し長くなります。そして、これがドイツ語になると、
+          </p>
+          <pre><code>Ich <span class="hljs-keyword">bin </span>mir sicher, dass sie am liebsten vergessen würden, wer sie <span class="hljs-keyword">einmal </span>waren, und als <span class="hljs-keyword">jemand </span><span class="hljs-keyword">anderes </span>wiedergeboren werden wollen.
+</code></pre>
+          <p>132文字！字数だけでも日本語の2倍！助けて！</p>
+          <figure>
+            <img
+              src="./qa.jpg"
+              alt="Ich bin mir sicher, dass sie am liebsten vergessen würden, wer sie einmal waren, und als jemand anderes wiedergeboren werden wollen."
+            />
+            <figcaption>選択肢と重なってしまう。助けて</figcaption>
+          </figure>
+          <p>
+            これは言語の特性によるもので、翻訳では避けられない問題だと思います。最初から多言語リリースする作品だったら、こういう長いテキストも考慮したうえでUIを組むべき。ただ、SAEKOは既にリリースしてしまっていて、今更UIを変えることは難しいです。そこで、今回は翻訳者の方にお願いして、訳文を縮めてもらうことにしました。
+          </p>
+          <p>
+            その他にも、月日の表記や組版など、EU系の言語には微妙に難しいいくつかの問題があり、同時並行によるミスなんかもあったりして、なかなか思った通りには進みませんでした。1〜2週間前に、ようやく全てのLQAを終わらせることができたのですが、完璧には翻訳者の依頼に応えられなかった部分があります。それでもせめて他のインディゲームと同じくらいには、各言語での体験を損なわないシステムにできたと思うのですが、あとはリリース後のプレイヤーによる良い反応を祈るばかりです。
+          </p>
+          <h4 id="-">その他</h4>
+          <p>
+            その他。ここから先は詳細に書くと本当に怒られそうなので、ぼやっとふわっと書きますが、S....h関連のプロジェクトが進んでいます。携帯機への移植はこれが初めてなので、プログラム上の苦労はありますが、頑張るしか無いです。でもQAは本当につらい。泣きたくなるほどつらい。誰か助けてほしい。
+          </p>
+          <p>
+            あと、あわせていくつか実現しそうなことがあり、最近はそのための監修作業なども行っていました。来月中には発表できると思いますが、.wi..h版で初めてSAEKOに触れてくれるプレイヤーはもちろん、S.itc.で普段あまりゲームをプレイしない人にとっても、きっと嬉しい発表になるんじゃないかと思います。
+          </p>
+          <p>
+            僕はゲーム制作のことをかなり趣味の延長として捉えていて、とにかく好きなコンテンツを自由に作りまくっていたいのですが、最近はローカライズしかりQAしかり、クリエイティビティと違う脳の部分を使う作業ばかりなのがつらいです。あまりにも向いてない。ほんとはずっと一人で誰得コンテンツをニヤニヤ笑いながら作っていたい......。
+          </p>
+          <p>
+            一方で、いま置かれている状況はかなり幸運なほうで、自分だってSAEKO以外でまたできるか分からないし、数カ月経てばきっと素晴らしい経験になるんだと思います。Steamのリリース時だって、だいぶしんどかったけど今となっては良い思い出だし。
+          </p>
+          <p>
+            まあ、とにかく、今はストレスを溜めずにやっていくしかないんだろうな〜と思います。あと反骨心というか、趣味で好きなことをやっている感覚は忘れないようにしたいです。このチラ裏すぎる開発日記もその１つ！あと、今まで意識の分散が苦手でほとんどできたことはないんですが、今後はSAEKO関係ない創作も週末とかに進めていきたいです。
+          </p>
+          <figure>
+            <img src="./bird.jpg" alt="鳥" />
+            <figcaption>鳥</figcaption>
+          </figure>
+          <p>
+            最後に、これは近所の公園の画像です。冬になってから散歩がとても楽しいです。コンビニで買ったホットコーヒーをジャケットに突っ込んで適当に歩いています。
+          </p>
+          <p>おわり！</p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div>(C) SAFE HAVN STUDIO - email:</div>
+      <address class="flex-grow-1">contact@safehavn.dev</address>
+      <div><a href="/" class="footer-right">TOP</a></div>
+    </footer>
+  </body>
+</html>
