@@ -7,7 +7,14 @@
     <name>SAFE HAVN STUDIO</name>
   </author>
   <id>tag:safehavn.dev,2023:feed</id>
-  <updated>2026-02-26T21:34:59</updated>
+  <updated>2026-03-10T19:35:01</updated>
+  <entry>
+    <title>開発日記 2026-03-10 -- SAFE HAVN STUDIO</title>
+    <link rel="alternate" href="https://safehavn.dev/blog/2026-03-10/" />
+    <id>tag:safehavn.dev,2023:entry://2026-03-10</id>
+    <updated>2026-03-10T19:35:01</updated>
+    <summary>Switch版審査、音楽プレイヤー</summary>
+  </entry>
   <entry>
     <title>開発日記 2026-02-26 (Switch版発売決定) -- SAFE HAVN STUDIO</title>
     <link rel="alternate" href="https://safehavn.dev/blog/2026-02-26/" />
