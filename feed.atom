@@ -7,7 +7,14 @@
     <name>SAFE HAVN STUDIO</name>
   </author>
   <id>tag:safehavn.dev,2023:feed</id>
-  <updated>2026-04-09T10:16:32</updated>
+  <updated>2026-05-12T12:00:00</updated>
+  <entry>
+    <title>開発日記 2026-05-12 -- SAFE HAVN STUDIO</title>
+    <link rel="alternate" href="https://safehavn.dev/blog/2026-05-12/" />
+    <id>tag:safehavn.dev,2023:entry://2026-05-12</id>
+    <updated>2026-05-12T12:00:00</updated>
+    <summary>Switch版、Bitsummit、新作</summary>
+  </entry>
   <entry>
     <title>開発日記 2026-04-09 -- SAFE HAVN STUDIO</title>
     <link rel="alternate" href="https://safehavn.dev/blog/2026-04-09/" />
