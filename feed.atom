@@ -7,7 +7,14 @@
     <name>SAFE HAVN STUDIO</name>
   </author>
   <id>tag:safehavn.dev,2023:feed</id>
-  <updated>2026-05-12T12:00:00</updated>
+  <updated>2026-06-02T20:55:00</updated>
+  <entry>
+    <title>開発日記 2026-06-02 -- SAFE HAVN STUDIO</title>
+    <link rel="alternate" href="https://safehavn.dev/blog/2026-06-02/" />
+    <id>tag:safehavn.dev,2023:entry://2026-06-02</id>
+    <updated>2026-06-02T20:55:00</updated>
+    <summary>不定期更新</summary>
+  </entry>
   <entry>
     <title>開発日記 2026-05-12 -- SAFE HAVN STUDIO</title>
     <link rel="alternate" href="https://safehavn.dev/blog/2026-05-12/" />
