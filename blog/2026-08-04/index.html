@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>開発日記 2026-08-04 -- SAFE HAVN STUDIO</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="/style.css?ver=20240820" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+        <link
+            rel="alternate"
+            type="application/rss+xml"
+            title="RSS"
+            href="https://safehavn.dev/feed.atom"
+        />
+        <meta property="og:title" content="開発日記 2026-08-04" />
+        <meta property="og:description" content="北米パッケージ版とか" />
+        <meta
+            property="og:image"
+            content="https://safehavn.dev/blog/2026-08-04/saeko_colossal.webp"
+        />
+        <meta
+            name="twitter:image"
+            content="https://safehavn.dev/blog/2026-08-04/saeko_colossal.webp"
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="開発日記 2026-08-04" />
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <ul class="nav-list-left">
+                    <li class="nav-list-item">
+                        <a href="/" class="brand-link">SAFE HAVN STUDIO</a>
+                    </li>
+                </ul>
+            </header>
+            <div class="main">
+                <article>
+                    <h1 id="-2026-08-04">開発日記 2026-08-04</h1>
+                    <p>こんにちは。kypです。これは今月の開発日記です。</p>
+                    <h4 id="saeko-">SAEKOの北米パッケージ版が出ます</h4>
+                    <figure>
+                        <img
+                            src="./saeko_colossal.webp"
+                            alt="SAEKO: Giantess Dating Sim - Colossal Edition"
+                        />
+                    </figure>
+                    <p>
+                        SAEKOの北米パッケージ版、「<a
+                            href="https://store.serenityforge.com/products/saeko-giantess-dating-sim-colossal-edition"
+                            >SAEKO: Giantess Dating Sim - Colossal Edition</a
+                        >」が8月26日に発売されます！特典やパッケージは<a
+                            href="https://serenityforge.com/"
+                            >Serenity Forge</a
+                        >さんに作っていただいたもので、カバーアートはなんとDDLCのアートワークを手がけた<a
+                            href="https://linktr.ee/satchely"
+                            >Satchely</a
+                        >さんに描いていただいたものです。超好き。
+                    </p>
+                    <figure>
+                        <blockquote class="twitter-tweet">
+                            <p lang="en" dir="ltr">
+                                Take a peek at the inner cover of SAEKO:
+                                Giantess Dating Sim Colossal Edition!<a
+                                    href="https://x.com/_Satchely?ref_src=twsrc%5Etfw"
+                                    >@_Satchely</a
+                                >
+                                absolutely knocked it out of the park with this
+                                illustration, where every mischievous detail of
+                                Saeko and her little “collection” is brought to
+                                life beautifully. 💜<br /><br />Make room on
+                                your shelf…
+                                <a href="https://t.co/sRpAutcvDM"
+                                    >pic.twitter.com/sRpAutcvDM</a
+                                >
+                            </p>
+                            — Serenity Forge (@SerenityForge)
+                            <a
+                                href="https://x.com/SerenityForge/status/2075332657232163200?ref_src=twsrc%5Etfw"
+                                >July 9, 2026</a
+                            >
+                        </blockquote>
+                        <script
+                            async
+                            src="https://platform.x.com/widgets.js"
+                            charset="utf-8"
+                        ></script>
+                    </figure>
+                    <p>
+                        たびたびインタビューなどでも話していますが、自分がインディーゲームを知ったきっかけはVA11
+                        HALL-Aで、それ以降も海外のアドベンチャーゲームをたびたびプレイしてきました。DDLCももちろん好きだし、個人的にはDDLC
+                        Plusの追加エピソードが強く印象に残っています。今回、このような形でSerenity
+                        Forgeさんや海外のクリエイターと関わることができ、本当に光栄です。
+                    </p>
+                    <p>
+                        あと、海外の人に描いてもらった絵って、どれも日本のイラストとは微妙に違う魅力があっていいよね......。
+                    </p>
+                    <h4 id="saeko-v2-1-4-">SAEKO v2.1.4 アップデート</h4>
+                    <p>
+                        その他、細かい話ですが、<a
+                            href="https://steamcommunity.com/app/2492120/eventcomments/591810592556404198/"
+                            >SAEKOのV2.1.4アップデート</a
+                        >を実施しました。これまでのビルドとは別に、「非圧縮ビルド」というものを配信しています。画像やスクリプトのファイルなどをあらかじめ圧縮しておくのではなく、個別のファイルとして読み込むようにしたものです。読み込みは実行時に行われるので、通常のエディタで画像やスクリプトを改変すると、その改変したファイルに基づいたゲームがプレイできます。
+                    </p>
+                    <p>
+                        個人的にSteamのMOD文化が好きだったのですが、開発中は余裕がなく、MOD対応の機能を入れることができませんでした。今回の非圧縮ビルドも、単にリソースを動的に読み込めるようにしただけで、決してMODフレンドリーになったとはいえないのですが、少しはMOD文化に対して誠実な構造になったのではないかと思います。
+                    </p>
+                    <p>
+                        スクリプトシステムも自作で、プログラミング的にも面白い部分があると思うので、ぜひ覗いてみてください。あとはソースコードも公開しちゃいたいね。今はダメでも、5年後くらいには......。
+                    </p>
+                    <h4 id="-">新作とか</h4>
+                    <p>
+                        新作の準備も進めています。先月に引き続き、ゲームのアイデアは固まっていて、あとは適切なシステムを考えるためのプロトタイピングを繰り返している......という段階です。アイデアを思いつき、実装して、面白くなかったりうまくシナリオに馴染まなかったら没にする、という繰り返しです。
+                    </p>
+                    <p>
+                        ゲーム開発の大半とは異なり、タスクをこなして前に進んでいく感覚が薄く、それどころか数日分の進捗を粉々に切り刻むことも多いので、精神的には過酷です。机に座ってぼーっとしていることも多く、ゲームのアイデアを紙に書いたりしていると、授業中の中学生に戻ったような感じがします。大の大人が、こんなことを平日の昼間にやっていていいのか......？
+                    </p>
+                    <figure>
+                        <img
+                            src="./prototype_terminal.webp"
+                            alt="スクリーンショット 2026-08-04 18.07.18"
+                        />
+                    </figure>
+                    <p>
+                        まあ、でも。プロトタイプを作り直すたびに、本当に少しずつだけど、ゲームが良くなっている感覚はあります。何回試しても納得のいくシステムが出来なかったら、アイデア自体を捨ててしまうこともあるとは思いますが、現時点ではもっと粘ってみようかなという感じです。
+                    </p>
+                    <p>
+                        あとプロトタイプはGUIではなくターミナルで作っています。こっちのが頭が良くてカッコいい感じがするからです。プロトタイプを破棄するときも罪の意識を覚えずに済みます。おすすめです。
+                    </p>
+                    <p>おわり！</p>
+                </article>
+            </div>
+        </div>
+        <footer>
+            <div>(C) SAFE HAVN STUDIO - email:</div>
+            <address class="flex-grow-1">contact@safehavn.dev</address>
+            <div><a href="/" class="footer-right">TOP</a></div>
+        </footer>
+    </body>
+</html>
