@@ -1,0 +1,30 @@
+baseURL: https://safehavn.dev/
+locale: ja
+title: SAFE HAVN STUDIO
+theme: safehavn
+timeZone: Asia/Tokyo
+disableKinds: [taxonomy, term]
+params:
+    description: SAFE HAVN STUDIO はゲームやWebサービスを作る小規模なチームです。できれば、ユニークでディープなものを作りたいです。
+markup:
+    goldmark:
+        renderer:
+            unsafe: true # tweet / bluesky / iframe などの埋め込みを Markdown 内に直接書く
+        extensions:
+            typographer:
+                disable: true
+        parser:
+            wrapStandAloneImageWithinParagraph: false # 単独行の画像を <figure> にする (render-image.html)
+mediaTypes:
+    application/atom+xml:
+        suffixes: [atom]
+outputFormats:
+    atom:
+        mediaType: application/atom+xml
+        baseName: feed # 旧サイトと同じ /feed.atom
+        isPlainText: false
+        rel: alternate
+outputs:
+    home: [html, atom]
+    section: [html]
+    page: [html]

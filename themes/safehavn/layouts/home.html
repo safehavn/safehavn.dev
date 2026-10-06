@@ -1,0 +1,31 @@
+{{ define "main" }}
+<div class="toppage">
+  <h1 style="display: none;">{{ site.Title }}</h1>
+
+  <h2>ABOUT</h2>
+  <div class="readmore"><a href="/about/">Details</a></div>
+  私達はゲームやWebサービスを作る小規模なチームです。<br>
+  できれば、ユニークでディープなものを作りたいです。
+
+  <h2>PRODUCTS</h2>
+  <div class="readmore"><a href="/products/">List</a></div>
+  <div class="showcase">
+    <div class="showcase-thumbnail">
+      <img src="/images/product_tn_saekogame.png" alt="Package thumbnail, SAEKO: Giantess Dating Sim" />
+    </div>
+    <div class="showcase-description">
+      <h3>SAEKO: Giantess Dating Sim</h3>
+      <p>小さくなって女の子と関わるビジュアルノベル</p>
+      <span class="ex-link"><a href="https://saekogame.com">Official Website</a></span>
+    </div>
+  </div>
+
+  <h2>ARTICLES</h2>
+  <div class="readmore"><a href="/blog/">Back number</a></div>
+  <ul>
+    {{ range first 5 (where site.RegularPages "Section" "blog") }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}

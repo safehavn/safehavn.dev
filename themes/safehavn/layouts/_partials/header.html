@@ -1,0 +1,18 @@
+<div class="header">
+  <div class="brand">
+    <a href="/">{{ site.Title }}</a>
+  </div>
+  {{ if .IsHome }}
+  <div class="brand-logo">
+    <img src="/images/brand_logo_b.png" alt="{{ site.Title }}" />
+  </div>
+  {{ else }}
+  <div class="border"></div>
+  {{ end }}
+  <div class="nav">
+    <div class="nav-link"><a href="/about/">ABOUT</a></div>
+    <div class="nav-link"><a href="/products/">PRODUCTS</a></div>
+    <div class="nav-link"><a href="/blog/">ARTICLES</a></div>
+    <div class="nav-link"><a href="/contact/">CONTACT</a></div>
+  </div>
+</div>

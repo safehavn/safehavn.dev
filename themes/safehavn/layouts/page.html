@@ -1,0 +1,13 @@
+{{ define "main" }}
+<article>
+  {{ if not .Params.notitle }}<h1>{{ .Title }}</h1>{{ end }}
+  {{ .Content }}
+</article>
+{{ if eq .Section "blog" }}
+<div class="article-nav">
+  <div>{{ with .PrevInSection }}← <a href="{{ .RelPermalink }}">前</a>{{ end }}</div>
+  <div><a href="/blog/">記事一覧</a></div>
+  <div>{{ with .NextInSection }}<a href="{{ .RelPermalink }}">次</a> →{{ end }}</div>
+</div>
+{{ end }}
+{{ end }}

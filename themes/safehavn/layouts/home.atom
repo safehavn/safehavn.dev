@@ -1,0 +1,25 @@
+{{- $posts := first 20 (where site.RegularPages "Section" "blog") -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\"?>" | safeHTML }}
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ site.Language.Locale }}">
+  <title>{{ site.Title }}</title>
+  <link rel="alternate" type="text/html" href="{{ site.Home.Permalink }}" />
+  <link rel="self" type="application/atom+xml" href="{{ .Permalink }}" />
+  <author><name>{{ site.Title }}</name></author>
+  <id>tag:safehavn.dev,2023:feed</id>
+  {{- with index $posts 0 }}
+  <updated>{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}</updated>
+  {{- end }}
+  {{- range $posts }}
+  <entry>
+    <title>{{ .Title }} -- {{ site.Title }}</title>
+    <link rel="alternate" href="{{ .Permalink }}" />
+    {{- /* 旧手書きフィードと同じ id 形式（既読が重複しないように） */}}
+    <id>tag:safehavn.dev,2023:entry://{{ .Params.feedid | default (path.Base .File.Dir) }}</id>
+    <updated>{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}</updated>
+    {{- with .Description }}
+    <summary>{{ . }}</summary>
+    {{- end }}
+    <content type="html">{{ .Content | html }}</content>
+  </entry>
+  {{- end }}
+</feed>

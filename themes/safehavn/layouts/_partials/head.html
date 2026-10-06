@@ -1,0 +1,23 @@
+<meta charset="utf-8" />
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} -- {{ site.Title }}{{ end }}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+{{ partialCached "head/css.html" . }}
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gen-interface-jp@0.8.0/cdn/300.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gen-interface-jp@0.8.0/cdn/600.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gen-interface-jp@0.8.0/cdn/display-600.css">
+{{ with site.Home.OutputFormats.Get "atom" }}
+<link rel="alternate" type="application/atom+xml" title="{{ site.Title }}" href="{{ .Permalink }}" />
+{{ end }}
+<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }}{{ end }}" />
+<meta property="og:description" content="{{ or .Description site.Params.description }}" />
+{{ with index (.Params.images | default slice) 0 }}
+{{ $img := urls.JoinPath $.Permalink . }}
+<meta property="og:image" content="{{ $img }}" />
+<meta name="twitter:image" content="{{ $img }}" />
+<meta name="twitter:card" content="summary_large_image" />
+{{ else }}
+<meta property="og:image" content="{{ "ogp.png" | absURL }}" />
+<meta name="twitter:card" content="summary" />
+{{ end }}
