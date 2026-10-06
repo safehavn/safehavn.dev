@@ -1,8 +1,8 @@
 :root {
-  --brand-color: #ba2e70;
-  --main-bg-color: #f0cbda;
-  --main-text-color: #141314;
-  --sub-text-color: #fff3fa;
+    --brand-color: #ba2e70;
+    --main-bg-color: #f0cbda;
+    --main-text-color: #141314;
+    --sub-text-color: #fff3fa;
 }
 
 html {
@@ -10,358 +10,354 @@ html {
 }
 
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 
-  background-color: var(--main-bg-color);
-  color: var(--main-text-color);
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
 
-  font-size: 16px;
-  font-family: "Gen Interface JP", "Gen Interface JP Display", sans-serif;
-  font-weight:300;
+    font-size: 16px;
+    font-family: "Gen Interface JP", "Gen Interface JP Display", sans-serif;
+    font-weight: 300;
 
-  letter-spacing: 0.02em;
-  line-height: 1.8;
-  text-align: justify;
-  text-autospace: normal;
+    letter-spacing: 0.02em;
+    line-height: 1.8;
+    text-align: justify;
+    text-autospace: normal;
 
-  scroll-behavior: smooth;
-  box-sizing: border-box;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body::selection {
-  background-color: var(--brand-color);
-  color: var(--sub-text-color);
+    background-color: var(--brand-color);
+    color: var(--sub-text-color);
 }
 
 .container {
-  margin: auto;
-  padding: 0 20px;
-  max-width: 660px;
-  min-width: 400px;
+    margin: auto;
+    padding: 0 20px;
+    max-width: 660px;
 }
-
 
 /* header */
 
 .header {
-  padding-top: 2em;
+    padding-top: 2em;
 }
 
 .brand {
-  padding-bottom: 0.5em;
-  font-family: "Gen Interface JP Display";
-  font-weight: 600;
-  font-size: large;
-  letter-spacing: 0.25em;
-  text-align: center;
+    padding-bottom: 0.5em;
+    font-family: "Gen Interface JP Display";
+    font-weight: 600;
+    font-size: large;
+    letter-spacing: 0.25em;
+    text-align: center;
 }
 
 .brand > a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .border {
-  border-bottom: solid var(--main-text-color) 0.8px;
+    border-bottom: solid var(--main-text-color) 0.8px;
 }
 
 .nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: small;
-  padding: 12px 0;;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: small;
+    padding: 12px 0;
 }
 
-.nav-link{
-  letter-spacing: 0.25em;
-  margin-right: -0.25em;
+.nav-link {
+    letter-spacing: 0.25em;
+    margin-right: -0.25em;
 }
 
 .nav-link > a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 @media (min-width: 701px) {
-  .brand-logo {
-    height: 240px;
-  }
-  .brand-logo img{
-    width: 640px;
-    padding: 20px 0;
-  }
+    .brand-logo {
+        height: 240px;
+    }
+    .brand-logo img {
+        width: 640px;
+        padding: 20px 0;
+    }
 }
 @media (max-width: 700px) {
-  .brand-logo {
-    height: 160px;
-  }
-  .brand-logo img{
-    width: 320px;
-    padding: 30px 0;
-  }
+    .brand-logo {
+        height: 160px;
+    }
+    .brand-logo img {
+        width: 320px;
+        padding: 30px 0;
+    }
 }
 
 .brand-logo {
-  padding: 12px 0;
-  background-color: var(--sub-text-color);
-  border-radius: 4px;
-  text-align: center;
+    padding: 12px 0;
+    background-color: var(--sub-text-color);
+    border-radius: 4px;
+    text-align: center;
 }
-
 
 /* general */
 
 div,
 p {
-  margin: 0;
+    margin: 0;
 }
 
 a {
-  color: inherit;
-  text-decoration: underline;
-  text-decoration-thickness: 0.8px;
-  text-underline-offset: 1.5px;
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-thickness: 0.8px;
+    text-underline-offset: 1.5px;
 }
 
 b {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 .main {
-  padding-top: 36px;
-  padding-bottom: 36px;
+    padding-top: 36px;
+    padding-bottom: 36px;
 }
 
+iframe {
+    max-width: 100%;
+}
 
 /* toppage の書式設定*/
 
-.toppage h1{
-  font-family: "Gen Interface JP Display", "sans-serif";
-  text-align: center;
+.toppage h1 {
+    font-family: "Gen Interface JP Display", "sans-serif";
+    text-align: center;
 }
 
 .toppage h2 {
-  font-family: "Gen Interface JP Display", "sans-serif";
-  font-size: large;
-  letter-spacing: 0.2em;
-  line-height: 24px;
-  margin: 12px 0;
-  padding-top: 4em;
+    font-family: "Gen Interface JP Display", "sans-serif";
+    font-size: large;
+    letter-spacing: 0.2em;
+    line-height: 24px;
+    margin: 12px 0;
+    padding-top: 4em;
 }
 
 .toppage .readmore {
-  margin-top: -36px;
-  margin-bottom: 12px;
-  margin-right: -0.1em;
-  text-align: right;
-  line-height: 24px;
-  font-size: small;
-  letter-spacing: 0.1em;
+    margin-top: -36px;
+    margin-bottom: 12px;
+    margin-right: -0.1em;
+    text-align: right;
+    line-height: 24px;
+    font-size: small;
+    letter-spacing: 0.1em;
 }
 
 .toppage .readmore::after {
-  content: " →";
+    content: " →";
 }
 
 .toppage ul {
-  padding-left: 3em;
+    padding-left: 3em;
 }
 
 .toppage li {
-  padding-bottom: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 .showcase {
-  display: flex;
-  flex-direction: row;
-  gap: 1.5em;
-  margin-bottom: 0.5em;
-  padding: 0.5em 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    margin-bottom: 0.5em;
+    padding: 0.5em 0;
 }
 
 .showcase-thumbnail {
-  width: 30%;
-  max-width: 200px;
-  min-width: 120px;
+    width: 30%;
+    max-width: 200px;
+    min-width: 120px;
 }
 
 .showcase-thumbnail img {
-  max-width: 100%;
-  border-radius: 4px;
+    max-width: 100%;
+    border-radius: 4px;
 }
 
 .showcase-description {
-  padding-bottom: 1em;
+    padding-bottom: 1em;
 }
 
 .showcase-description h3 {
-  margin: 0;
-  padding-bottom: 0.5em;
-  font-size: 16px;
-  letter-spacing: 0.06em;
-  text-align: left;
+    margin: 0;
+    padding-bottom: 0.5em;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    text-align: left;
 }
 
-
-
 .ex-link {
-  letter-spacing: 0.1em;
-  font-size: small;
+    letter-spacing: 0.1em;
+    font-size: small;
 }
 
 .ex-link::after {
-  content: " ↗";
-  font-size: small;
+    content: " ↗";
+    font-size: small;
 }
 
 .in-link {
-  letter-spacing: 0.1em;
-  font-size: small;
+    letter-spacing: 0.1em;
+    font-size: small;
 }
 
 .in-link::after {
-  content: " →";
-  font-size: small;
+    content: " →";
+    font-size: small;
 }
 
 /* article の書式設定*/
 
 article h1 {
-  font-family: "Gen Interface JP Display", "sans-serif";
-  font-size: x-large;
-  letter-spacing: 0.06em;
-  margin: 1em 0;
+    font-family: "Gen Interface JP Display", "sans-serif";
+    font-size: x-large;
+    letter-spacing: 0.06em;
+    margin: 1em 0;
 }
 
 article h4 {
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  margin-bottom: 1em;
-  padding-top: 1em;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    margin-bottom: 1em;
+    padding-top: 1em;
 }
 
 article p {
-  margin-bottom: 2em;
+    margin-bottom: 2em;
 }
 
 article ul {
-  padding-left: 3em;
+    padding-left: 3em;
 }
 
 article li {
-  padding-bottom: 0.5em;
+    padding-bottom: 0.5em;
 }
 
 article figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1em;
-  margin: 2em 2em;
-  padding: 1em 0;
-  max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin: 2em 2em;
+    padding: 1em 0;
+    max-width: 100%;
 }
 
 article figure img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 article figure figcaption {
-  font-size: small;
-  text-align: center;
-  margin-bottom: 0.5em;;
+    font-size: small;
+    text-align: center;
+    margin-bottom: 0.5em;
 }
 
 .article-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  font-size: small;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: small;
 
-  padding-top: 4em;
+    padding-top: 4em;
 }
 
 .article-nav div {
-  letter-spacing: 0.1em;
-  margin-right: -0.1em;
+    letter-spacing: 0.1em;
+    margin-right: -0.1em;
 }
-
 
 /* footer */
 
 .link-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-  margin-top: 1em;
-  padding: 2em 0;
-
+    margin-top: 1em;
+    padding: 2em 0;
 }
 
 .link-list-left {
-  width: 60%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  column-gap: 1em;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 1em;
 }
 
 .link-list-right {
-  width: 40%;
-  padding-left: 2em;
-  text-align: right;
+    width: 40%;
+    padding-left: 2em;
+    text-align: right;
 }
 
 .link-list-right div {
-  margin-right: -0.1em;
+    margin-right: -0.1em;
 }
 
 .footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  
-  padding-bottom: 4em;
-  font-size: small;
-  letter-spacing: 0.1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-bottom: 4em;
+    font-size: small;
+    letter-spacing: 0.1em;
 }
 
 .footer div {
-  margin-right: -0.1em;
+    margin-right: -0.1em;
 }
 /* 旧サイトの記事内で使われているクラス (Daily SAEKO のクイズ等) */
 .notice {
-  border: 1px solid #000;
-  padding: 1em;
-  margin-bottom: 2em;
-  line-height: 1.5em;
+    border: 1px solid #000;
+    padding: 1em;
+    margin-bottom: 2em;
+    line-height: 1.5em;
 }
 
 .notice > h4 {
-  font-weight: bold;
-  letter-spacing: 0.5em;
-  text-align: center;
-  margin: 0;
-  padding: 0 0 1em 0;
+    font-weight: bold;
+    letter-spacing: 0.5em;
+    text-align: center;
+    margin: 0;
+    padding: 0 0 1em 0;
 }
 
 .notice-fake {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 .notice-quiz {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .notice-quiz ol {
-  padding-inline-start: 0;
+    padding-inline-start: 0;
 }
 
 .notice-fake-bottom {
-  white-space: nowrap;
-  overflow: hidden;
-  line-clamp: 4;
+    white-space: nowrap;
+    overflow: hidden;
+    line-clamp: 4;
 }
