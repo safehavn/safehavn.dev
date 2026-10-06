@@ -76,6 +76,13 @@ body::selection {
     margin-right: -0.25em;
 }
 
+@media (max-width: 700px) {
+    .nav-link {
+        letter-spacing: 0.1em;
+        margin-right: -0.1em;
+    }
+}
+
 .nav-link > a {
     text-decoration: none;
 }
@@ -271,9 +278,8 @@ article figure figcaption {
 }
 
 .article-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     font-size: small;
 
     padding-top: 4em;
@@ -282,6 +288,10 @@ article figure figcaption {
 .article-nav div {
     letter-spacing: 0.1em;
     margin-right: -0.1em;
+}
+
+.article-nav div:last-child {
+    text-align: right;
 }
 
 /* footer */
