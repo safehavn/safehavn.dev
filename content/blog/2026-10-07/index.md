@@ -1,7 +1,7 @@
 ---
 title: "開発日記 2026-10-07"
 date: 2026-10-07T19:20:00
-description: "ウェブサイトをリニューアルしました"
+description: "読みやすくなって新登場"
 images: ["automation.png"]
 ---
 
